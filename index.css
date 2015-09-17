@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Fira Sans";
+  src: url("firasans-light.eot");
+  src: local("Fira Sans Regular"), url("firasans-light.woff") format("woff"), url("firasans-light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+div.callout {
+	font-size: 1.3em;
+ 	padding: 1em 2em 1em 2em;
+	margin-bottom: 2em;
+ 	background-color: #052659;
+	border-bottom: 1px solid grey;
+ 	color: white;
+}
+
+td {
+	margin: 1px;
+}
+
+td a, td a:visited, td a:hover {
+	color: white;
+}
+
+td.no {
+	background-color: firebrick;
+	color: white;
+}
+
+td.yes {
+	background-color: green;
+	color: white;
+}
+
+td.partial {
+	background-color: orange;
+	color: white;
+}
