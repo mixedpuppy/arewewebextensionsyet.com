@@ -9,81 +9,100 @@
 	<body>
 		<div class="callout">
 			<h1>Are we Web Extensions yet?</h1>
-			<p><b>No. But we are working on it.</p>
 		</div>
 		<div class="container">
-			<p>Mozilla documentation on <a href="https://wiki.mozilla.org/WebExtensions">Web Extensions</a>.</p>
-			<p>Mozilla <a href="http://mzl.la/1QB0EMG">bugs</a>, <a href="https://bugzilla.mozilla.org/buglist.cgi?f1=bug_mentor&o1=isnotempty&whiteboard_type=contains_all&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=UNCONFIRMED&include_fields=id&include_fields=assigned_to&include_fields=summary&include_fields=last_change_time&include_fields=component&include_fields=whiteboard&product=%20Toolkit&component=WebExtensions&list_id=12576923">good first bugs</a>.</p>
-			<h2>Common APIs</h2>
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<th>Feature</th>
-						<th>Firefox</th>
-						<th>Chrome</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Alarms</td>
-						<td class="yes docs-needed"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/alarms">Yes</a></td>
-						<td class="yes"><a href="https://developer.chrome.com/extensions/alarms">Yes</a></td>
-					</tr>
-					<tr>
-						<td>Browser Action</td>
-						<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction">Partial</a></td>
-						<td class="yes"><a href="https://developer.chrome.com/extensions/browserAction">Yes</a></td>
-					</tr>
-					<tr>
-						<td>Extension</td>
-						<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/extension">Partial</a></td>
-						<td class="yes"><a href="https://developer.chrome.com/extensions/extension">Yes</a></td>
-					</tr>
-					<tr>
-						<td>i18n</td>
-						<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/i18n">Partial</a></td>
-						<td class="yes"><a href="https://developer.chrome.com/extensions/i18n">Yes</a></td>
-					</tr>
-					<tr>
-						<td>Notifications</td>
-						<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/notifications">Partial</a></td>
-						<td class="yes"><a href="https://developer.chrome.com/extensions/notifications">Yes</a></td>
-					</tr>
-					<tr>
-						<td>Runtime</td>
-						<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime">Partial</a></td>
-						<td class="yes"><a href="https://developer.chrome.com/extensions/runtime">Yes</a></td>
-					</tr>
-					<tr>
-						<td>Storage</td>
-						<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/storage">Partial</a></td>
-						<td class="yes"><a href="https://developer.chrome.com/extensions/storage">Yes</a></td>
-					</tr>
-					<tr>
-						<td>Tabs</td>
-						<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs">Partial</a></td>
-						<td class="yes"><a href="https://developer.chrome.com/extensions/tabs">Yes</a></td>
-					</tr>
-					<tr>
-						<td>webNavigation</td>
-						<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webnavigation">Partial</a></td>
-						<td class="yes"><a href="https://developer.chrome.com/extensions/webNavigation">Yes</a></td>
-					</tr>
-					<tr>
-						<td>webRequest</td>
-						<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webrequest">Partial</a></td>
-						<td class="yes"><a href="https://developer.chrome.com/extensions/webRequest">Yes</a></td>
-					</tr>
-					<tr>
-						<td>windows</td>
-						<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows">Partial</a></td>
-						<td class="yes"><a href="https://developer.chrome.com/extensions/windows">Yes</a></td>
-					</tr>
-				</tbody>
-			</table>
-			<h2>Mozilla APIs</h2>
-			<p>To do.</p>
-			<div class="note"><a href="https://github.com/andymckay/arewewebextensionsyet.com">Source on github</a>.</div>
+			<h2>No, but we are working on it.</h2>
+			<p>Mozilla documentation on <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions">Web Extensions</a>, see also the <a href="https://wiki.mozilla.org/WebExtensions">wiki page</a>.</p>
+			<p>Chrome documentation on <a href="https://wiki.mozilla.org/WebExtensions">Web Extensions</a>.</p>
+			<h2>Bugs</h2>
+				<table class="table table-striped">
+					<tbody>
+						<tr>
+							<th class="col-md-6">Open</th>
+							<td class="partial col-md-6"><a href="http://mzl.la/1QB0EMG" id="open">...calculating</a></td>
+						</tr>
+						<tr>
+							<th class="col-md-6">Closed</th>
+							<td class="yes col-md-6"><span id="closed">...calculating</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<p>How about some <a href="https://bugzilla.mozilla.org/buglist.cgi?f1=bug_mentor&o1=isnotempty&whiteboard_type=contains_all&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=UNCONFIRMED&include_fields=id&include_fields=assigned_to&include_fields=summary&include_fields=last_change_time&include_fields=component&include_fields=whiteboard&product=%20Toolkit&component=WebExtensions&list_id=12576923" id="first">good first bugs</a>.</p>
+		</div>
+		<div class="container">
+			<h2>API parity</h2>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Feature</th>
+							<th>Firefox</th>
+							<th>Chrome</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Alarms</td>
+							<td class="yes docs-needed"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/alarms">Yes</a></td>
+							<td class="yes"><a href="https://developer.chrome.com/extensions/alarms">Yes</a></td>
+						</tr>
+						<tr>
+							<td>Browser Action</td>
+							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction">Partial</a></td>
+							<td class="yes"><a href="https://developer.chrome.com/extensions/browserAction">Yes</a></td>
+						</tr>
+						<tr>
+							<td>Extension</td>
+							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/extension">Partial</a></td>
+							<td class="yes"><a href="https://developer.chrome.com/extensions/extension">Yes</a></td>
+						</tr>
+						<tr>
+							<td>i18n</td>
+							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/i18n">Partial</a></td>
+							<td class="yes"><a href="https://developer.chrome.com/extensions/i18n">Yes</a></td>
+						</tr>
+						<tr>
+							<td>Notifications</td>
+							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/notifications">Partial</a></td>
+							<td class="yes"><a href="https://developer.chrome.com/extensions/notifications">Yes</a></td>
+						</tr>
+						<tr>
+							<td>Runtime</td>
+							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime">Partial</a></td>
+							<td class="yes"><a href="https://developer.chrome.com/extensions/runtime">Yes</a></td>
+						</tr>
+						<tr>
+							<td>Storage</td>
+							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/storage">Partial</a></td>
+							<td class="yes"><a href="https://developer.chrome.com/extensions/storage">Yes</a></td>
+						</tr>
+						<tr>
+							<td>Tabs</td>
+							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs">Partial</a></td>
+							<td class="yes"><a href="https://developer.chrome.com/extensions/tabs">Yes</a></td>
+						</tr>
+						<tr>
+							<td>webNavigation</td>
+							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webnavigation">Partial</a></td>
+							<td class="yes"><a href="https://developer.chrome.com/extensions/webNavigation">Yes</a></td>
+						</tr>
+						<tr>
+							<td>webRequest</td>
+							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webrequest">Partial</a></td>
+							<td class="yes"><a href="https://developer.chrome.com/extensions/webRequest">Yes</a></td>
+						</tr>
+						<tr>
+							<td>windows</td>
+							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows">Partial</a></td>
+							<td class="yes"><a href="https://developer.chrome.com/extensions/windows">Yes</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="container">
+				<div class="note"><a href="https://github.com/andymckay/arewewebextensionsyet.com">Source on github</a>.</div>
+			</div>
+			<script src="bz.js"></script>
+			<script src="script.js"></script>
 		</div>
 	</body>
 </html>

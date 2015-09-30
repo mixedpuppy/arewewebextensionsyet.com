@@ -24,16 +24,19 @@ td a, td a:visited, td a:hover {
 }
 
 td.no {
+    font-weight: bold;
 	background-color: firebrick;
 	color: white;
 }
 
 td.yes {
+    font-weight: bold;
 	background-color: green;
 	color: white;
 }
 
 td.partial {
-	background-color: orange;
+    font-weight: bold;
+	background-color: #C58917;
 	color: white;
 }
