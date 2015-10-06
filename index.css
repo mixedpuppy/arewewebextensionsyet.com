@@ -40,3 +40,9 @@ td.partial {
 	background-color: #C58917;
 	color: white;
 }
+
+td.unlikely {
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+}
