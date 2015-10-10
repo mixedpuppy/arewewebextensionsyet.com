@@ -23,26 +23,11 @@ td a, td a:visited, td a:hover {
 	color: white;
 }
 
-td.no {
-    font-weight: bold;
-	background-color: firebrick;
-	color: white;
+h4 a, h4 a:visited {
+    color: lightgrey;
 }
 
-td.yes {
-    font-weight: bold;
-	background-color: green;
-	color: white;
-}
 
-td.partial {
-    font-weight: bold;
-	background-color: #C58917;
-	color: white;
-}
-
-td.unlikely {
-    font-weight: bold;
-    background-color: blue;
-    color: white;
+dl {
+    margin: 0;
 }

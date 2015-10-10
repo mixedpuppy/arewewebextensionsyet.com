@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Are we Web Extensions yet?</title>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="callout">
+			<h1>Are we Web Extensions yet?</h1>
+		</div>
+		<div class="container">
+			<h2>No, but we are working on it.</h2>
+			<p>Mozilla documentation on <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions">Web Extensions</a>, see also the <a href="https://wiki.mozilla.org/WebExtensions">wiki page</a>.</p>
+			<p>Chrome documentation on <a href="https://developer.chrome.com/extensions">Web Extensions</a>.</p>
+			<h2>Bugs</h2>
+			<p>There are <b id="open">...</b> <a href="http://mzl.la/1QB0EMG">open</a> bugs and <b id="closed">...</b> closed bugs.</p>
+			<p>How about some <a href="https://bugzilla.mozilla.org/buglist.cgi?f1=bug_mentor&o1=isnotempty&whiteboard_type=contains_all&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=UNCONFIRMED&include_fields=id&include_fields=assigned_to&include_fields=summary&include_fields=last_change_time&include_fields=component&include_fields=whiteboard&product=%20Toolkit&component=WebExtensions&list_id=12576923" id="first">good first bugs</a>.</p>
+		</div>
+		<div class="container">
+			<h2>APIs</h2>
+			{data}
+	  </div>
+		<div class="container">
+			<div class="note"><a href="https://github.com/andymckay/arewewebextensionsyet.com">Source on github</a>.</div>
+		</div>
+		<script src="bz.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,195 @@
+{
+    "accessibilityFeatures": {
+        "status": "no"
+    },
+    "alarms": {
+        "status": "complete",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-alarms.js"
+    },
+    "bookmarks": {
+        "status": "no"
+    },
+    "browserAction": {
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-browserAction.js"
+    },
+    "browsingData": {
+        "status": "no"
+    },
+    "commands": {
+        "status": "no"
+    },
+    "contentSettings": {
+        "status": "no"
+    },
+    "contextMenus": {
+        "status": "complete",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-contextMenus.js"
+    },
+    "cookies": {
+        "status": "complete",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-cookies.js"
+    },
+    "debugger": {
+        "status": "no"
+    },
+    "declarativeContent": {
+        "status": "no"
+    },
+    "desktopCapture": {
+        "status": "no"
+    },
+    "devtools.inspectedWindow": {
+        "status": "no"
+    },
+    "devtools.network": {
+        "status": "no"
+    },
+    "devtools.panels": {
+        "status": "no"
+    },
+    "documentScan": {
+        "status": "no"
+    },
+    "downloads": {
+        "status": "no"
+    },
+    "enterprise.platformKeys": {
+        "status": "no"
+    },
+    "events": {
+        "status": "no"
+    },
+    "extension": {
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-extension.js"
+    },
+    "extensionTypes": {
+        "status": "no"
+    },
+    "fileBrowserHandler": {
+        "status": "no"
+    },
+    "fileSystemProvider": {
+        "status": "no"
+    },
+    "fontSettings": {
+        "status": "no"
+    },
+    "gcm": {
+        "status": "unlikely"
+    },
+    "history": {
+        "status": "no"
+    },
+    "i18n": {
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-i18n.js"
+    },
+    "identity": {
+        "status": "no"
+    },
+    "idle": {
+        "status": "no"
+    },
+    "inputIME": {
+        "status": "no"
+    },
+    "management": {
+        "status": "no"
+    },
+    "networking.config": {
+        "status": "no"
+    },
+    "notifications": {
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-notifications.js"
+    },
+    "options": {
+        "status": "no"
+    },
+    "omnibox": {
+        "status": "no"
+    },
+    "pageAction": {
+        "status": "no"
+    },
+    "permissions": {
+        "status": "no"
+    },
+    "platformKeys": {
+        "status": "unlikely"
+    },
+    "power": {
+        "status": "no"
+    },
+    "printerProvier": {
+        "status": "no"
+    },
+    "privacy": {
+        "status": "no"
+    },
+    "proxy": {
+        "status": "no"
+    },
+    "runtime": {
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-runtime.js"
+    },
+    "sessions": {
+        "status": "no"
+    },
+    "storage": {
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-storage.js"
+    },
+    "system.cpu": {
+        "status": "no"
+    },
+    "system.memory": {
+        "status": "no"
+    },
+    "system.storage": {
+        "status": "no"
+    },
+    "tabs": {
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js"
+    },
+    "tabsCapture": {
+        "status": "no"
+    },
+    "topSites": {
+        "status": "no"
+    },
+    "tts": {
+        "status": "unlikely"
+    },
+    "ttsEngine": {
+        "status": "unlikely"
+    },
+    "types": {
+        "status": "no"
+    },
+    "vpnProvider": {
+        "status": "no"
+    },
+    "wallpaper": {
+        "status": "unlikely"
+    },
+    "webNavigation": {
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js"
+    },
+    "webRequest": {
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webRequest.js"
+    },
+    "webstore": {
+        "status": "no"
+    },
+    "windows": {
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-windows.js"
+    }
+}

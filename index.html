@@ -15,334 +15,468 @@
 			<p>Mozilla documentation on <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions">Web Extensions</a>, see also the <a href="https://wiki.mozilla.org/WebExtensions">wiki page</a>.</p>
 			<p>Chrome documentation on <a href="https://developer.chrome.com/extensions">Web Extensions</a>.</p>
 			<h2>Bugs</h2>
-				<table class="table table-striped">
-					<tbody>
-						<tr>
-							<th class="col-md-6">Open</th>
-							<td class="partial col-md-6"><a href="http://mzl.la/1QB0EMG" id="open">...calculating</a></td>
-						</tr>
-						<tr>
-							<th class="col-md-6">Closed</th>
-							<td class="yes col-md-6"><span id="closed">...calculating</span></td>
-						</tr>
-					</tbody>
-				</table>
-				<p>How about some <a href="https://bugzilla.mozilla.org/buglist.cgi?f1=bug_mentor&o1=isnotempty&whiteboard_type=contains_all&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=UNCONFIRMED&include_fields=id&include_fields=assigned_to&include_fields=summary&include_fields=last_change_time&include_fields=component&include_fields=whiteboard&product=%20Toolkit&component=WebExtensions&list_id=12576923" id="first">good first bugs</a>.</p>
+			<p>There are <b id="open">...</b> <a href="http://mzl.la/1QB0EMG">open</a> bugs and <b id="closed">...</b> closed bugs.</p>
+			<p>How about some <a href="https://bugzilla.mozilla.org/buglist.cgi?f1=bug_mentor&o1=isnotempty&whiteboard_type=contains_all&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=UNCONFIRMED&include_fields=id&include_fields=assigned_to&include_fields=summary&include_fields=last_change_time&include_fields=component&include_fields=whiteboard&product=%20Toolkit&component=WebExtensions&list_id=12576923" id="first">good first bugs</a>.</p>
 		</div>
 		<div class="container">
-			<h2>API parity</h2>
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<th>Feature</th>
-							<th>Firefox</th>
-							<th>Chrome</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Accessibility Features</td>
-							<td class="no">No</td>
-							<td class="yes docs-needed"><a href="https://developer.chrome.com/extensions/accessibilityFeatures">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Alarms</td>
-							<td class="yes docs-needed"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/alarms">Yes</a></td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/alarms">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Bookmarks</td>
-							<td class="no">No</td>
-							<td class="yes docs-needed"><a href="https://developer.chrome.com/extensions/bookmarks">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Browser Action</td>
-							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction">Partial</a></td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/browserAction">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Browsing Data</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/browsingData">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Commands</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/commands">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Content settings</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/contentSettings">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Context menus</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/contextMenus">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Cookies</td>
-							<td class="yes"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies">Yes</a></td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/contextMenus">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Debugger</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/contextMenus">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Declarative Content</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/declarativeContent">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Desktop Capture</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/desktopCapture">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Devtools &raquo; inspectedWindow</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/devtools.inspectedWindow">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Devtools &raquo; Network</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/devtools.network">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Devtools &raquo; Panels</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/devtools.panels">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Document Scan</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/documentScan">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Downloads</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/downloads">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Enterprise &raquo; Platform Keys</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/enterprise.platformKeys">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Events</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/events">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Extension</td>
-							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/extension">Partial</a></td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/extension">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Extension Types</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/extensionTypes">Yes</a></td>
-						</tr>
-						<tr>
-							<td>File Browser Handler</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/fileBrowserHandler">Yes</a></td>
-						</tr>
-						<tr>
-							<td>File System Provider</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/fileSystemProvider">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Font Settings</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/fontSettings">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Google Cloud Messaging</td>
-							<td class="unlikely">Unlikely</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/fileBrowserHandler">Yes</a></td>
-						</tr>
-						<tr>
-							<td>History</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/history">Yes</a></td>
-						</tr>
-						<tr>
-							<td>i18n</td>
-							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/i18n">Partial</a></td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/i18n">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Identity</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/identity">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Idle</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/idle">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Input IME</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/input.ime">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Management</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/management">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Networking Config</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/networking.config">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Notifications</td>
-							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/notifications">Partial</a></td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/notifications">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Omnibox</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/omnibox">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Page Action</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/pageAction">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Page Capture</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/pageCapture">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Permissions</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/permissions">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Platform Keys</td>
-							<td class="unlikely">Unlikely</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/platformKeys">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Power</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/power">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Printer Provider</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/printerProvider">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Privacy</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/privacy">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Proxy</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/proxy">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Runtime</td>
-							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime">Partial</a></td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/runtime">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Sessions</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/session">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Storage</td>
-							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/storage">Partial</a></td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/storage">Yes</a></td>
-						</tr>
-						<tr>
-							<td>System &raquo; CPU</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/system.cpu">Yes</a></td>
-						</tr>
-						<tr>
-							<td>System &raquo; Memory</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/system.memory">Yes</a></td>
-						</tr>
-						<tr>
-							<td>System &raquo; Storage</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/system.storage">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Tabs Capture</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/tabCapture">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Top Sites</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/tabs">Yes</a></td>
-						</tr>
-						<tr>
-							<td>TTS</td>
-							<td class="unlikely">Unlikely</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/tts">Yes</a></td>
-						</tr>
-						<tr>
-							<td>TTS Engine</td>
-							<td class="unlikely">Unlikely</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/ttsEngine">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Types</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/types">Yes</a></td>
-						</tr>
-						<tr>
-							<td>VPN Provider</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/vpnProvider">Yes</a></td>
-						</tr>
-						<tr>
-							<td>Wallpaper</td>
-							<td class="unlikely">Unlikely</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/wallpaper">Yes</a></td>
-						</tr>
-						<tr>
-							<td>webNavigation</td>
-							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webnavigation">Partial</a></td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/webNavigation">Yes</a></td>
-						</tr>
-						<tr>
-							<td>webRequest</td>
-							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webrequest">Partial</a></td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/webRequest">Yes</a></td>
-						</tr>
-						<tr>
-							<td>webstore</td>
-							<td class="no">No</td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/webstore">Yes</a></td>
-						</tr>
-						<tr>
-							<td>windows</td>
-							<td class="partial"><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows">Partial</a></td>
-							<td class="yes"><a href="https://developer.chrome.com/extensions/windows">Yes</a></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="container">
-				<div class="note"><a href="https://github.com/andymckay/arewewebextensionsyet.com">Source on github</a>.</div>
-			</div>
-			<script src="bz.js"></script>
-			<script src="script.js"></script>
+			<h2>APIs</h2>
+				<h4 id="accessibilityFeatures"><a href="#accessibilityFeatures">&sect;</a> accessibilityFeatures&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/accessibilityFeatures">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="alarms"><a href="#alarms">&sect;</a> alarms&nbsp;<span class="label label-success">complete</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/alarms">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-alarms.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/alarms">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="bookmarks"><a href="#bookmarks">&sect;</a> bookmarks&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/bookmarks">Chrome docs</a>
+		<dl>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208907">1208907: Implement bookmarks API for open extension API</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="browserAction"><a href="#browserAction">&sect;</a> browserAction&nbsp;<span class="label label-warning">partial</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-browserAction.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/browserAction">Chrome docs</a>
+		<dl>
+			<dt>9 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1199050">1199050: default_popups for browserActions should have rounded corners.</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1199052">1199052: The default_popups for browserActions in the menu panel appear in the wrong place.</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1199056">1199056: The opening animation for default_popups for browserActions is different than for the Menu Panel.</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1200674">1200674: BrowserAction icon sizes don't match Firefox defaults.</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1203738">1203738: browserAction code doesn't correctly detect pixel density</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1207591">1207591: badge background color - provide 3 recommended colors</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1207597">1207597: browserAction icon should match appearance of native Firefox toolbar buttons</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1207692">1207692: provide a highlight state for browserActions</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213433">1213433: Complete the implementation of chrome.browserAction</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="browsingData"><a href="#browsingData">&sect;</a> browsingData&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/browsingData">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="commands"><a href="#commands">&sect;</a> commands&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/commands">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="contentSettings"><a href="#contentSettings">&sect;</a> contentSettings&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/contentSettings">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="contextMenus"><a href="#contextMenus">&sect;</a> contextMenus&nbsp;<span class="label label-success">complete</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/contextMenus">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-contextMenus.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/contextMenus">Chrome docs</a>
+		<dl>
+			<dt>2 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211366">1211366: Cleaning up contextMenus data structure</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211368">1211368: Implement missing features for contextMenus</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="cookies"><a href="#cookies">&sect;</a> cookies&nbsp;<span class="label label-success">complete</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-cookies.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/cookies">Chrome docs</a>
+		<dl>
+			<dt>2 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210996">1210996: Check host permissions for chrome.cookies</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210997">1210997: See if we can use nsCookieService for cookie matching in chrome.cookies</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="debugger"><a href="#debugger">&sect;</a> debugger&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/debugger">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="declarativeContent"><a href="#declarativeContent">&sect;</a> declarativeContent&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/declarativeContent">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="desktopCapture"><a href="#desktopCapture">&sect;</a> desktopCapture&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/desktopCapture">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="devtools.inspectedWindow"><a href="#devtools.inspectedWindow">&sect;</a> devtools.inspectedWindow&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/devtools.inspectedWindow">Chrome docs</a>
+		<dl>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211859">1211859: Implement devtools API for open extension API</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="devtools.network"><a href="#devtools.network">&sect;</a> devtools.network&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/devtools.network">Chrome docs</a>
+		<dl>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211859">1211859: Implement devtools API for open extension API</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="devtools.panels"><a href="#devtools.panels">&sect;</a> devtools.panels&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/devtools.panels">Chrome docs</a>
+		<dl>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211859">1211859: Implement devtools API for open extension API</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="documentScan"><a href="#documentScan">&sect;</a> documentScan&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/documentScan">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="downloads"><a href="#downloads">&sect;</a> downloads&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/downloads">Chrome docs</a>
+		<dl>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213445">1213445: Implement chrome.downloads</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="enterprise.platformKeys"><a href="#enterprise.platformKeys">&sect;</a> enterprise.platformKeys&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/enterprise.platformKeys">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="events"><a href="#events">&sect;</a> events&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/events">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="extension"><a href="#extension">&sect;</a> extension&nbsp;<span class="label label-warning">partial</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/extension">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-extension.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/extension">Chrome docs</a>
+		<dl>
+			<dt>3 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190680">1190680: Support errors for open extension API via lastError</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208563">1208563: Implement chrome.extension.inIncognitoContext property</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213426">1213426: Complete the implementation of chrome.extension</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="extensionTypes"><a href="#extensionTypes">&sect;</a> extensionTypes&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/extensionTypes">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="fileBrowserHandler"><a href="#fileBrowserHandler">&sect;</a> fileBrowserHandler&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/fileBrowserHandler">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="fileSystemProvider"><a href="#fileSystemProvider">&sect;</a> fileSystemProvider&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/fileSystemProvider">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="fontSettings"><a href="#fontSettings">&sect;</a> fontSettings&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/fontSettings">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="gcm"><a href="#gcm">&sect;</a> gcm&nbsp;<span class="label label-default">unlikely</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/gcm">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="history"><a href="#history">&sect;</a> history&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/history">Chrome docs</a>
+		<dl>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208334">1208334: Implement history API for open extension API</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="i18n"><a href="#i18n">&sect;</a> i18n&nbsp;<span class="label label-warning">partial</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/i18n">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-i18n.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/i18n">Chrome docs</a>
+		<dl>
+			<dt>4 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208761">1208761: chrome.i18n is undefined in content scripts</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208763">1208763: Treat chrome-extension:// and moz-extension:// schemes as equivalent</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209184">1209184: Support the @@extension_id localization / i18n message in CSS</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213450">1213450: Complete the implementation of chrome.i18n</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="identity"><a href="#identity">&sect;</a> identity&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/identity">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="idle"><a href="#idle">&sect;</a> idle&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/idle">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="inputIME"><a href="#inputIME">&sect;</a> inputIME&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/inputIME">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="management"><a href="#management">&sect;</a> management&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/management">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="networking.config"><a href="#networking.config">&sect;</a> networking.config&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/networking.config">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="notifications"><a href="#notifications">&sect;</a> notifications&nbsp;<span class="label label-warning">partial</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/notifications">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-notifications.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/notifications">Chrome docs</a>
+		<dl>
+			<dt>3 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190681">1190681: Browser extension |notifications| API needs support for buttons in notifications</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1205730">1205730: chrome.notification fail in first try</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213455">1213455: Complete the implementation of chrome.notifications</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="omnibox"><a href="#omnibox">&sect;</a> omnibox&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/omnibox">Chrome docs</a>
+		<dl>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1166831">1166831: It should be possible to add suggestions to the awesome bar via Add-on SDK module</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="options"><a href="#options">&sect;</a> options&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/options">Chrome docs</a>
+		<dl>
+			<dt>2 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1212684">1212684: Implement options_page manifest property for open extension API</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1212685">1212685: Implement options_ui manifest property for open extension API</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="pageAction"><a href="#pageAction">&sect;</a> pageAction&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/pageAction">Chrome docs</a>
+		<dl>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197422">1197422: Implement pageAction API for open extension API</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="permissions"><a href="#permissions">&sect;</a> permissions&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/permissions">Chrome docs</a>
+		<dl>
+			<dt>5 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190688">1190688: Implement activeTab permission for open extension API</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1193837">1193837: Need to check permissions for programmatic content script injection</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197420">1197420: Implement permissions API and optional_permissions manifest property for open extension API</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197451">1197451: Support clipboard access in open extension API</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1203233">1203233: Can't use geolocation in a WebExtension</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="platformKeys"><a href="#platformKeys">&sect;</a> platformKeys&nbsp;<span class="label label-default">unlikely</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/platformKeys">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="power"><a href="#power">&sect;</a> power&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/power">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="printerProvier"><a href="#printerProvier">&sect;</a> printerProvier&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/printerProvier">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="privacy"><a href="#privacy">&sect;</a> privacy&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/privacy">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="proxy"><a href="#proxy">&sect;</a> proxy&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/proxy">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="runtime"><a href="#runtime">&sect;</a> runtime&nbsp;<span class="label label-warning">partial</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-runtime.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/runtime">Chrome docs</a>
+		<dl>
+			<dt>4 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1156826">1156826: Provide api to set uninstall url</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190682">1190682: Implement |connectNative| for open extension API</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211401">1211401: Implement chrome.runtime.sendMessage on b2g</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213473">1213473: Complete the implementation of chrome.runtime</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="sessions"><a href="#sessions">&sect;</a> sessions&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/sessions">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="storage"><a href="#storage">&sect;</a> storage&nbsp;<span class="label label-warning">partial</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/storage">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-storage.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/storage">Chrome docs</a>
+		<dl>
+			<dt>4 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197346">1197346: Provide access to storage API from content scripts</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208874">1208874: localStorage in background script seems to be temporary</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211997">1211997: Intermittent test_ext_storage.html | Assertion count 20 is greater than expected range 0-0 assertions.</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213475">1213475: Complete the implementation of chrome.storage</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="system.cpu"><a href="#system.cpu">&sect;</a> system.cpu&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/system.cpu">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="system.memory"><a href="#system.memory">&sect;</a> system.memory&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/system.memory">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="system.storage"><a href="#system.storage">&sect;</a> system.storage&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/system.storage">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="tabs"><a href="#tabs">&sect;</a> tabs&nbsp;<span class="label label-warning">partial</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
+		<dl>
+			<dt>6 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1198405">1198405: chrome.tabs.query’s url parameter doesn't match “one or more URL patterns”.</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1205221">1205221: chrome.tabs.onUpdate event doesn't be sent when updating tab's attribute</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210583">1210583: Callback argument ignored by tabs.executeScript and tabs.insertCss</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1212890">1212890: Implement chrome.tabs.getCurrent for open extension API</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="tabsCapture"><a href="#tabsCapture">&sect;</a> tabsCapture&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/tabsCapture">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="topSites"><a href="#topSites">&sect;</a> topSites&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/topSites">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="tts"><a href="#tts">&sect;</a> tts&nbsp;<span class="label label-default">unlikely</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/tts">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="ttsEngine"><a href="#ttsEngine">&sect;</a> ttsEngine&nbsp;<span class="label label-default">unlikely</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/ttsEngine">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="types"><a href="#types">&sect;</a> types&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/types">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="vpnProvider"><a href="#vpnProvider">&sect;</a> vpnProvider&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/vpnProvider">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="wallpaper"><a href="#wallpaper">&sect;</a> wallpaper&nbsp;<span class="label label-default">unlikely</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/wallpaper">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="webNavigation"><a href="#webNavigation">&sect;</a> webNavigation&nbsp;<span class="label label-warning">partial</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
+		<dl>
+			<dt>3 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190685">1190685: Implement webNavigation.getFrame/getAllFrames</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213478">1213478: Complete the implementation of chrome.webNavigation</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="webRequest"><a href="#webRequest">&sect;</a> webRequest&nbsp;<span class="label label-warning">partial</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webRequest.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/webRequest">Chrome docs</a>
+		<dl>
+			<dt>9 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190689">1190689: Implement webRequest auth and redirect handlers</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1201979">1201979: Cannot access requestBody in  the WebRequest.jsm (onBeforeRequest).</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1202734">1202734: Add webRequest requestId property</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209065">1209065: Intermittent test_ext_webrequest.html | Test timed out.</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209315">1209315: Intermittent test_ext_notifications.html,test_ext_webrequest.html,test_ext_simple.html | Test timed out.</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210976">1210976: Make the detail level of resource types exposed to WebExtensions WebRequest discoverable</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210990">1210990: Implement content-side hooks to handle WebRequest decisions which affect or are affected by the DOM.</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1212718">1212718: chrome.webRequest.onCompleted never fires</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213483">1213483: Complete the implementation of chrome.webRequest</a></dd>
+		</dl>
+	</blockquote>
+	<h4 id="webstore"><a href="#webstore">&sect;</a> webstore&nbsp;<span class="label label-default">no</span></h4>
+<blockquote>		<a href="https://developer.chrome.com/extensions/webstore">Chrome docs</a>
+		<dl>
+			<dt>0 bugs</dt>
+		</dl>
+	</blockquote>
+	<h4 id="windows"><a href="#windows">&sect;</a> windows&nbsp;<span class="label label-warning">partial</span></h4>
+<blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows">Firefox docs</a> &bull;
+		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-windows.js">Firefox code</a> &bull;
+		<a href="https://developer.chrome.com/extensions/windows">Chrome docs</a>
+		<dl>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213484">1213484: Complete the implementation of chrome.windows</a></dd>
+		</dl>
+	</blockquote>
+
+	  </div>
+		<div class="container">
+			<div class="note"><a href="https://github.com/andymckay/arewewebextensionsyet.com">Source on github</a>.</div>
 		</div>
+		<script src="bz.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
