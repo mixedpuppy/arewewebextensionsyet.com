@@ -4,10 +4,6 @@ import requests
 
 
 def bugs(whiteboard):
-    filename = '/tmp/%s.json' % whiteboard
-    if os.path.exists(filename):
-        return json.loads(open(filename, 'r').read())
-
     res = requests.get(
         'https://bugzilla.mozilla.org/rest/bug',
         params={
@@ -18,8 +14,6 @@ def bugs(whiteboard):
             'status': 'NEW,ASSIGNED,UNCONFIRMED,REOPENED'
         }
     )
-    fh = open(filename, 'w')
-    fh.write(json.dumps(res.json()))
     return res.json()
 
 
