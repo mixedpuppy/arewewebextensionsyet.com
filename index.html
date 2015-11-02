@@ -291,10 +291,11 @@
 	<h4 id="pageAction"><a href="#pageAction">&sect;</a> pageAction&nbsp;<span class="label label-default">no</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/pageAction">Chrome docs</a>
 		<dl>
-			<dt>3 bugs</dt>
+			<dt>4 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197422">1197422: Implement pageAction API for open extension API</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1218175">1218175: pageAction extension no longer works after browser restart</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1218443">1218443: pageActions incorrectly appear on all tabs in a window</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1218443">1218443: pageActions do not update correctly in some circumstances</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220751">1220751: pageActions do not reappear after back/forward navigation action</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="permissions"><a href="#permissions">&sect;</a> permissions&nbsp;<span class="label label-default">no</span></h4>
@@ -361,13 +362,14 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-storage.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/storage">Chrome docs</a>
 		<dl>
-			<dt>6 bugs</dt>
+			<dt>7 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197346">1197346: Provide access to storage API from content scripts</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208874">1208874: localStorage in background script seems to be temporary</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211997">1211997: Intermittent test_ext_storage.html | Assertion count 20 is greater than expected range 0-0 assertions.</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213475">1213475: Complete the implementation of chrome.storage</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213990">1213990: Clear localStorage when a WebExtension is uninstalled</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1217886">1217886: Implement chrome.storage.local.clear</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220494">1220494: Implement chrome.storage.sync</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="system.cpu"><a href="#system.cpu">&sect;</a> system.cpu&nbsp;<span class="label label-default">no</span></h4>
