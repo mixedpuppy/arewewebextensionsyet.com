@@ -42,9 +42,10 @@
 	<h4 id="bookmarks"><a href="#bookmarks">&sect;</a> bookmarks&nbsp;<span class="label label-default">no</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/bookmarks">Chrome docs</a>
 		<dl>
-			<dt>2 bugs</dt>
+			<dt>3 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213674">1213674: Complete the implementation of chrome.bookmarks</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213675">1213675: Set lastError in chrome.bookmarks</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1221764">1221764: Implement simple chrome.bookmarks events</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="browserAction"><a href="#browserAction">&sect;</a> browserAction&nbsp;<span class="label label-warning">partial</span></h4>
@@ -353,13 +354,12 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-storage.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/storage">Chrome docs</a>
 		<dl>
-			<dt>7 bugs</dt>
+			<dt>6 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197346">1197346: Provide access to storage API from content scripts</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208874">1208874: localStorage in background script seems to be temporary</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211997">1211997: Intermittent test_ext_storage.html | Assertion count 20 is greater than expected range 0-0 assertions.</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213475">1213475: Complete the implementation of chrome.storage</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213990">1213990: Clear localStorage when a WebExtension is uninstalled</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1217886">1217886: Implement chrome.storage.local.clear</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220494">1220494: Implement chrome.storage.sync</a></dd>
 		</dl>
 	</blockquote>
@@ -387,13 +387,13 @@
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
 		<dl>
 			<dt>7 bugs</dt>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1205221">1205221: chrome.tabs.onUpdate event doesn't be sent when updating tab's attribute</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210583">1210583: Callback argument ignored by tabs.executeScript and tabs.insertCss</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1212890">1212890: Implement chrome.tabs.getCurrent for open extension API</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213993">1213993: Add a frameId parameter to browser.tabs.executeScript/insertCss</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1214007">1214007: Implement chrome.tabs.move</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1223254">1223254: Figure out when tabs API callbacks should fire, and make them fire at the right time</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="tabsCapture"><a href="#tabsCapture">&sect;</a> tabsCapture&nbsp;<span class="label label-default">no</span></h4>
