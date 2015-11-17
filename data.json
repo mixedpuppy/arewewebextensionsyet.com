@@ -10,7 +10,7 @@
         "status": "no"
     },
     "browserAction": {
-        "status": "partial",
+        "status": "complete",
         "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-browserAction.js"
     },
     "browsingData": {
