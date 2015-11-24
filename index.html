@@ -36,7 +36,8 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-alarms.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/alarms">Chrome docs</a>
 		<dl>
-			<dt>0 bugs</dt>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1227451">1227451: chrome.alarms API doesn't check 'alarms' permission</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="bookmarks"><a href="#bookmarks">&sect;</a> bookmarks&nbsp;<span class="label label-default">no</span></h4>
@@ -220,8 +221,7 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-i18n.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/i18n">Chrome docs</a>
 		<dl>
-			<dt>4 bugs</dt>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208761">1208761: chrome.i18n is undefined in content scripts</a></dd>
+			<dt>3 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208763">1208763: Treat chrome-extension:// and moz-extension:// schemes as equivalent</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209184">1209184: Support localization / i18n message in CSS</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213450">1213450: Complete the implementation of chrome.i18n</a></dd>
@@ -386,7 +386,7 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
 		<dl>
-			<dt>8 bugs</dt>
+			<dt>10 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210583">1210583: Callback argument ignored by tabs.executeScript and tabs.insertCss</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1212890">1212890: Implement chrome.tabs.getCurrent for open extension API</a></dd>
@@ -395,6 +395,8 @@
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1214007">1214007: Implement chrome.tabs.move</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220124">1220124: chrome.tabs.onHighlighted undefined</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1223254">1223254: Figure out when tabs API callbacks should fire, and make them fire at the right time</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1227460">1227460: chrome.tabs.executeScript API doesn't check host permissions</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1227462">1227462: chrome.tabs.update/create APIs should call checkLoadURI with DISALLOW_INHERIT_PRINCIPAL</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="tabsCapture"><a href="#tabsCapture">&sect;</a> tabsCapture&nbsp;<span class="label label-default">no</span></h4>
@@ -455,12 +457,10 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webRequest.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webRequest">Chrome docs</a>
 		<dl>
-			<dt>10 bugs</dt>
+			<dt>8 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190689">1190689: Implement webRequest auth and redirect handlers</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1201979">1201979: Support requestBody in onBeforeRequest</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1202734">1202734: Add webRequest requestId property</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209065">1209065: Intermittent test_ext_webrequest.html | Test timed out.</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209315">1209315: Intermittent test_ext_notifications.html,test_ext_webrequest.html,test_ext_simple.html | Test timed out.</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210990">1210990: Implement content-side hooks to handle WebRequest decisions which affect or are affected by the DOM.</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213483">1213483: Complete the implementation of chrome.webRequest</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1215197">1215197: Implement chrome.webRequest.onBeforeRedirect</a></dd>
