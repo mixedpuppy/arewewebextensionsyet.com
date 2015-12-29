@@ -7,7 +7,8 @@
         "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-alarms.js"
     },
     "bookmarks": {
-        "status": "no"
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-bookmarks.js"
     },
     "browserAction": {
         "status": "complete",
@@ -112,7 +113,8 @@
         "status": "no"
     },
     "pageAction": {
-        "status": "no"
+        "status": "complete",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-pageAction.js"
     },
     "permissions": {
         "status": "no"
