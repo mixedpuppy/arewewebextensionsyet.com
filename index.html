@@ -36,8 +36,7 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-alarms.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/alarms">Chrome docs</a>
 		<dl>
-			<dt>1 bugs</dt>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1227451">1227451: chrome.alarms API doesn't check 'alarms' permission</a></dd>
+			<dt>0 bugs</dt>
 		</dl>
 	</blockquote>
 	<h4 id="bookmarks"><a href="#bookmarks">&sect;</a> bookmarks&nbsp;<span class="label label-warning">partial</span></h4>
@@ -56,13 +55,15 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-browserAction.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/browserAction">Chrome docs</a>
 		<dl>
-			<dt>6 bugs</dt>
+			<dt>8 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1203738">1203738: Update browserAction and pageAction icons after pixel density change</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1207591">1207591: badge background color - provide 3 recommended colors</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1207597">1207597: browserAction icon should match appearance of native Firefox toolbar buttons</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1207692">1207692: provide a highlight state for browserActions</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1222454">1222454: Not possible to set the width and height of the popup</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1225215">1225215: BrowserAction setter methods change default value when tab ID is invalid</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1225633">1225633: Better default styles for WebExtension popups.</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1237377">1237377: [meta] WebExtension popup support</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="browsingData"><a href="#browsingData">&sect;</a> browsingData&nbsp;<span class="label label-default">no</span></h4>
@@ -260,10 +261,11 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-notifications.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/notifications">Chrome docs</a>
 		<dl>
-			<dt>3 bugs</dt>
+			<dt>4 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190681">1190681: Browser extension |notifications| API needs support for buttons in notifications</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1205730">1205730: chrome.notification fail in first try</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213455">1213455: Complete the implementation of chrome.notifications</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1237035">1237035: chrome.notifications.create is ignored for the first time in WebExtensions</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="omnibox"><a href="#omnibox">&sect;</a> omnibox&nbsp;<span class="label label-default">no</span></h4>
@@ -286,8 +288,10 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-pageAction.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/pageAction">Chrome docs</a>
 		<dl>
-			<dt>1 bugs</dt>
+			<dt>3 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1222454">1222454: Not possible to set the width and height of the popup</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1225633">1225633: Better default styles for WebExtension popups.</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1237377">1237377: [meta] WebExtension popup support</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="permissions"><a href="#permissions">&sect;</a> permissions&nbsp;<span class="label label-default">no</span></h4>
@@ -383,7 +387,7 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
 		<dl>
-			<dt>8 bugs</dt>
+			<dt>9 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210583">1210583: Callback argument ignored by tabs.executeScript and tabs.insertCss</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></dd>
@@ -391,13 +395,15 @@
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220124">1220124: chrome.tabs.onHighlighted undefined</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1223254">1223254: Figure out when tabs API callbacks should fire, and make them fire at the right time</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1227462">1227462: chrome.tabs.update/create APIs should call checkLoadURI with DISALLOW_INHERIT_PRINCIPAL</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1233326">1233326: chrome.tabs.create from pageAction popup places the created tab first by default</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1231819">1231819: Implement tabs.captureVisibleTab API</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1233326">1233326: tabs.create with defaults to index=0, active=false</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="tabsCapture"><a href="#tabsCapture">&sect;</a> tabsCapture&nbsp;<span class="label label-default">no</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/tabsCapture">Chrome docs</a>
 		<dl>
-			<dt>0 bugs</dt>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1231819">1231819: Implement tabs.captureVisibleTab API</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="topSites"><a href="#topSites">&sect;</a> topSites&nbsp;<span class="label label-default">no</span></h4>
