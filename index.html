@@ -75,7 +75,8 @@
 	<h4 id="commands"><a href="#commands">&sect;</a> commands&nbsp;<span class="label label-default">no</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/commands">Chrome docs</a>
 		<dl>
-			<dt>0 bugs</dt>
+			<dt>1 bugs</dt>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240350">1240350: commands API not supported</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="contentSettings"><a href="#contentSettings">&sect;</a> contentSettings&nbsp;<span class="label label-default">no</span></h4>
@@ -89,11 +90,10 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-contextMenus.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/contextMenus">Chrome docs</a>
 		<dl>
-			<dt>4 bugs</dt>
+			<dt>3 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1215375">1215375: Implement checkboxes, radio groups, and icons for context menu items</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1215376">1215376: Implement onBeforeShow event</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1215377">1215377: Implement event page support for context menus</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1234057">1234057: contextData.documentURIObject is sometimes undefined in contextMenus</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="cookies"><a href="#cookies">&sect;</a> cookies&nbsp;<span class="label label-success">complete</span></h4>
@@ -278,9 +278,10 @@
 	<h4 id="options"><a href="#options">&sect;</a> options&nbsp;<span class="label label-default">no</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/options">Chrome docs</a>
 		<dl>
-			<dt>2 bugs</dt>
+			<dt>3 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1212684">1212684: Implement options_page manifest property for open extension API</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1212685">1212685: Implement options_ui manifest property for open extension API</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1234091">1234091: implement chrome.runtime.openOptionsPage()</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="pageAction"><a href="#pageAction">&sect;</a> pageAction&nbsp;<span class="label label-success">complete</span></h4>
@@ -297,10 +298,11 @@
 	<h4 id="permissions"><a href="#permissions">&sect;</a> permissions&nbsp;<span class="label label-default">no</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/permissions">Chrome docs</a>
 		<dl>
-			<dt>3 bugs</dt>
+			<dt>4 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197420">1197420: Implement permissions API and optional_permissions manifest property for open extension API</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197451">1197451: Support clipboard access in open extension API</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1203233">1203233: Can't use geolocation in a WebExtension</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1237822">1237822: "tabs" permission is needed to query by URL</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="platformKeys"><a href="#platformKeys">&sect;</a> platformKeys&nbsp;<span class="label label-default">unlikely</span></h4>
@@ -338,11 +340,10 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-runtime.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/runtime">Chrome docs</a>
 		<dl>
-			<dt>4 bugs</dt>
+			<dt>3 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1156826">1156826: Provide api to set uninstall url</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190682">1190682: Implement |connectNative| for open extension API</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213473">1213473: Complete the implementation of chrome.runtime</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1225463">1225463: Implement chrome.browserAction on b2g</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="sessions"><a href="#sessions">&sect;</a> sessions&nbsp;<span class="label label-default">no</span></h4>
@@ -356,9 +357,8 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-storage.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/storage">Chrome docs</a>
 		<dl>
-			<dt>5 bugs</dt>
+			<dt>4 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197346">1197346: Provide access to storage API from content scripts</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211997">1211997: Intermittent test_ext_storage.html | Assertion count 20 is greater than expected range 0-0 assertions.</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213475">1213475: Complete the implementation of chrome.storage</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213990">1213990: Clear localStorage when a WebExtension is uninstalled</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220494">1220494: Implement chrome.storage.sync</a></dd>
@@ -387,7 +387,7 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
 		<dl>
-			<dt>9 bugs</dt>
+			<dt>17 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210583">1210583: Callback argument ignored by tabs.executeScript and tabs.insertCss</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></dd>
@@ -396,7 +396,15 @@
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1223254">1223254: Figure out when tabs API callbacks should fire, and make them fire at the right time</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1227462">1227462: chrome.tabs.update/create APIs should call checkLoadURI with DISALLOW_INHERIT_PRINCIPAL</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1231819">1231819: Implement tabs.captureVisibleTab API</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1233326">1233326: tabs.create with defaults to index=0, active=false</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1234086">1234086: tabs.onAttached is defined in the schema but not implemented or marked unsupported</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1234308">1234308: tabs.onCreated callback should receive a bare tab object as its argument</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238310">1238310: Implement browser.tabs zoom APIs</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238311">1238311: Implement browser.tabs muted tabs functionality</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238312">1238312: Implement tabs.duplicate API</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238313">1238313: Implement missing browser.tabs events</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238314">1238314: Implement browser.tabs opener functionality</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240326">1240326: Don't trigger reflow on tab events</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240631">1240631: Callback not called for chrome.tabs.move when tab is invalid</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="tabsCapture"><a href="#tabsCapture">&sect;</a> tabsCapture&nbsp;<span class="label label-default">no</span></h4>
@@ -447,10 +455,11 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
 		<dl>
-			<dt>3 bugs</dt>
+			<dt>4 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190685">1190685: Implement webNavigation.getFrame/getAllFrames</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213478">1213478: Complete the implementation of chrome.webNavigation</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1239349">1239349: Implement webNavigation.onHistoryStateUpdated</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="webRequest"><a href="#webRequest">&sect;</a> webRequest&nbsp;<span class="label label-warning">partial</span></h4>
