@@ -75,8 +75,9 @@
 	<h4 id="commands"><a href="#commands">&sect;</a> commands&nbsp;<span class="label label-default">no</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/commands">Chrome docs</a>
 		<dl>
-			<dt>1 bugs</dt>
+			<dt>2 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240350">1240350: commands API not supported</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242557">1242557: Import missing commands API schema file</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="contentSettings"><a href="#contentSettings">&sect;</a> contentSettings&nbsp;<span class="label label-default">no</span></h4>
@@ -176,8 +177,7 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-extension.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/extension">Chrome docs</a>
 		<dl>
-			<dt>2 bugs</dt>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190680">1190680: Support errors for open extension API via lastError</a></dd>
+			<dt>1 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213426">1213426: Complete the implementation of chrome.extension</a></dd>
 		</dl>
 	</blockquote>
@@ -389,19 +389,15 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
 		<dl>
-			<dt>17 bugs</dt>
+			<dt>13 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210583">1210583: Callback argument ignored by tabs.executeScript and tabs.insertCss</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213993">1213993: Add a frameId parameter to browser.tabs.executeScript/insertCss</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220124">1220124: chrome.tabs.onHighlighted undefined</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1223254">1223254: Figure out when tabs API callbacks should fire, and make them fire at the right time</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1227462">1227462: chrome.tabs.update/create APIs should call checkLoadURI with DISALLOW_INHERIT_PRINCIPAL</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1231819">1231819: Implement tabs.captureVisibleTab API</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1234086">1234086: tabs.onAttached is defined in the schema but not implemented or marked unsupported</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1234308">1234308: tabs.onCreated callback should receive a bare tab object as its argument</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238310">1238310: Implement browser.tabs zoom APIs</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238311">1238311: Implement browser.tabs muted tabs functionality</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238312">1238312: Implement tabs.duplicate API</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238313">1238313: Implement missing browser.tabs events</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238314">1238314: Implement browser.tabs opener functionality</a></dd>
@@ -412,8 +408,7 @@
 	<h4 id="tabsCapture"><a href="#tabsCapture">&sect;</a> tabsCapture&nbsp;<span class="label label-default">no</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/tabsCapture">Chrome docs</a>
 		<dl>
-			<dt>1 bugs</dt>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1231819">1231819: Implement tabs.captureVisibleTab API</a></dd>
+			<dt>0 bugs</dt>
 		</dl>
 	</blockquote>
 	<h4 id="topSites"><a href="#topSites">&sect;</a> topSites&nbsp;<span class="label label-default">no</span></h4>
@@ -457,11 +452,12 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
 		<dl>
-			<dt>4 bugs</dt>
+			<dt>5 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190685">1190685: Implement webNavigation.getFrame/getAllFrames</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213478">1213478: Complete the implementation of chrome.webNavigation</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1239349">1239349: Implement webNavigation.onHistoryStateUpdated</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242561">1242561: Import missing events API schema file</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="webRequest"><a href="#webRequest">&sect;</a> webRequest&nbsp;<span class="label label-warning">partial</span></h4>
