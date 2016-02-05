@@ -75,9 +75,16 @@
 	<h4 id="commands"><a href="#commands">&sect;</a> commands&nbsp;<span class="label label-default">no</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/commands">Chrome docs</a>
 		<dl>
-			<dt>2 bugs</dt>
+			<dt>9 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240350">1240350: commands API not supported</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242557">1242557: Import missing commands API schema file</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246024">1246024: Add in the Manifest schema for chrome.commands</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246028">1246028: Implement chrome.commands.getAll</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246029">1246029: Implement chrome.commands.onCommand</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246031">1246031: Create a utility for obtaining platform information</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246032">1246032: Create a utility for converting chrome keyboard commands into firefox keyboard commands</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246034">1246034: Add support for _execute_browser_action</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246035">1246035: Add support for _execute_page_action</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="contentSettings"><a href="#contentSettings">&sect;</a> contentSettings&nbsp;<span class="label label-default">no</span></h4>
@@ -405,10 +412,11 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
 		<dl>
-			<dt>13 bugs</dt>
+			<dt>14 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213993">1213993: Add a frameId parameter to browser.tabs.executeScript/insertCss</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1219940">1219940: [tracking] Support Mega as a WebExtension</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220124">1220124: chrome.tabs.onHighlighted undefined</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1223254">1223254: Figure out when tabs API callbacks should fire, and make them fire at the right time</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1227462">1227462: chrome.tabs.update/create APIs should call checkLoadURI with DISALLOW_INHERIT_PRINCIPAL</a></dd>
