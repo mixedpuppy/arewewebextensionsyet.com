@@ -75,7 +75,7 @@
 	<h4 id="commands"><a href="#commands">&sect;</a> commands&nbsp;<span class="label label-default">no</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/commands">Chrome docs</a>
 		<dl>
-			<dt>9 bugs</dt>
+			<dt>11 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240350">1240350: commands API not supported</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242557">1242557: Import missing commands API schema file</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246024">1246024: Add in the Manifest schema for chrome.commands</a></dd>
@@ -85,6 +85,8 @@
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246032">1246032: Create a utility for converting chrome keyboard commands into firefox keyboard commands</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246034">1246034: Add support for _execute_browser_action</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246035">1246035: Add support for _execute_page_action</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246038">1246038: Implement all of the supported keys</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246042">1246042: Use the keyset element to listen for registered commands</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="contentSettings"><a href="#contentSettings">&sect;</a> contentSettings&nbsp;<span class="label label-default">no</span></h4>
@@ -476,12 +478,13 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
 		<dl>
-			<dt>5 bugs</dt>
+			<dt>6 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190685">1190685: Implement webNavigation.getFrame/getAllFrames</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213478">1213478: Complete the implementation of chrome.webNavigation</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1239349">1239349: Implement webNavigation.onHistoryStateUpdated</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242561">1242561: Import missing events API schema file</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246125">1246125: Fix "moz-extensions:" URLs  reported as "jar:" URLs in webNavigation events</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="webRequest"><a href="#webRequest">&sect;</a> webRequest&nbsp;<span class="label label-warning">partial</span></h4>
