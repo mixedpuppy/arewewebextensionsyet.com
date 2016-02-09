@@ -77,16 +77,16 @@
 		<dl>
 			<dt>11 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240350">1240350: commands API not supported</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242557">1242557: Import missing commands API schema file</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246024">1246024: Add in the Manifest schema for chrome.commands</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246028">1246028: Implement chrome.commands.getAll</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246029">1246029: Implement chrome.commands.onCommand</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246031">1246031: Create a utility for obtaining platform information</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246032">1246032: Create a utility for converting chrome keyboard commands into firefox keyboard commands</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246034">1246034: Add support for _execute_browser_action</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246035">1246035: Add support for _execute_page_action</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246038">1246038: Implement all of the supported keys</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246042">1246042: Use the keyset element to listen for registered commands</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242557">1242557: [commands] Import missing commands API schema file</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246024">1246024: [commands] Add in the Manifest schema for chrome.commands</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246028">1246028: [commands] Implement chrome.commands.getAll</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246029">1246029: [commands] Implement chrome.commands.onCommand</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246031">1246031: [commands] Create a utility for obtaining platform information</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246032">1246032: [commands] Create a utility for converting chrome keyboard commands into firefox keyboard commands</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246034">1246034: [commands] Add support for _execute_browser_action</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246035">1246035: [commands] Add support for _execute_page_action</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246038">1246038: [commands] Implement all of the supported keys</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246042">1246042: [commands] Use the keyset element to listen for registered commands</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="contentSettings"><a href="#contentSettings">&sect;</a> contentSettings&nbsp;<span class="label label-default">no</span></h4>
@@ -166,7 +166,7 @@
 	<h4 id="downloads"><a href="#downloads">&sect;</a> downloads&nbsp;<span class="label label-default">no</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/downloads">Chrome docs</a>
 		<dl>
-			<dt>17 bugs</dt>
+			<dt>16 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213445">1213445: [tracking] Implement chrome.downloads</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245597">1245597: Implement chrome.downloads.download()</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245599">1245599: Implement chrome.downloads.onCreated</a></dd>
@@ -183,7 +183,6 @@
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245648">1245648: Implement chrome.downloads.drag()</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245651">1245651: Implement chrome.downloads.onErased</a></dd>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245652">1245652: Implement chrome.downloads.onDeterminingFilename</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245678">1245678: create json schema for chrome.downloads</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="enterprise.platformKeys"><a href="#enterprise.platformKeys">&sect;</a> enterprise.platformKeys&nbsp;<span class="label label-default">no</span></h4>
@@ -249,9 +248,12 @@
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-i18n.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/i18n">Chrome docs</a>
 		<dl>
-			<dt>2 bugs</dt>
+			<dt>5 bugs</dt>
 			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208763">1208763: Treat chrome-extension:// and moz-extension:// schemes as equivalent</a></dd>
-			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213450">1213450: Complete the implementation of chrome.i18n</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213450">1213450: Complete the implementation of chrome.i18n.getAcceptLanguages</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246748">1246748: Complete the implementation of chrome.i18n.getUILanguage</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246749">1246749: Complete the implementation of chrome.i18n</a></dd>
+			<dd><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246754">1246754: Complete the implementation of chrome.i18n.detectLanguage</a></dd>
 		</dl>
 	</blockquote>
 	<h4 id="identity"><a href="#identity">&sect;</a> identity&nbsp;<span class="label label-default">no</span></h4>
