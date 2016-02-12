@@ -1,6 +1,6 @@
 {
     "accessibilityFeatures": {
-        "status": "no"
+        "status": "not yet"
     },
     "alarms": {
         "status": "complete",
@@ -15,13 +15,13 @@
         "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-browserAction.js"
     },
     "browsingData": {
-        "status": "no"
+        "status": "not yet"
     },
     "commands": {
-        "status": "no"
+        "status": "not yet"
     },
     "contentSettings": {
-        "status": "no"
+        "status": "not yet"
     },
     "contextMenus": {
         "status": "complete",
@@ -32,137 +32,138 @@
         "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-cookies.js"
     },
     "debugger": {
-        "status": "no"
+        "status": "not yet"
     },
     "declarativeContent": {
-        "status": "no"
+        "status": "not yet"
     },
     "desktopCapture": {
-        "status": "no"
+        "status": "not yet"
     },
     "devtools.inspectedWindow": {
-        "status": "no"
+        "status": "not yet"
     },
     "devtools.network": {
-        "status": "no"
+        "status": "not yet"
     },
     "devtools.panels": {
-        "status": "no"
+        "status": "not yet"
     },
     "documentScan": {
-        "status": "no"
+        "status": "not yet"
     },
     "downloads": {
-        "status": "no"
+        "status": "not yet"
     },
     "enterprise.platformKeys": {
-        "status": "no"
+        "status": "not yet"
     },
     "events": {
-        "status": "no"
+        "status": "not yet"
     },
     "extension": {
         "status": "partial",
         "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-extension.js"
     },
     "extensionTypes": {
-        "status": "no"
+        "status": "not yet"
     },
     "fileBrowserHandler": {
-        "status": "no"
+        "status": "not yet"
     },
     "fileSystemProvider": {
-        "status": "no"
+        "status": "not yet"
     },
     "fontSettings": {
-        "status": "no"
+        "status": "not yet"
     },
     "gcm": {
         "status": "unlikely"
     },
     "history": {
-        "status": "no"
+        "status": "not yet"
     },
     "i18n": {
         "status": "partial",
         "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-i18n.js"
     },
     "identity": {
-        "status": "no"
+        "status": "not yet"
     },
     "idle": {
-        "status": "no"
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-idle.js"
     },
     "inputIME": {
-        "status": "no"
+        "status": "not yet"
     },
     "management": {
-        "status": "no"
+        "status": "not yet"
     },
     "networking.config": {
-        "status": "no"
+        "status": "not yet"
     },
     "notifications": {
         "status": "partial",
         "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-notifications.js"
     },
     "options": {
-        "status": "no"
+        "status": "not yet"
     },
     "omnibox": {
-        "status": "no"
+        "status": "not yet"
     },
     "pageAction": {
         "status": "complete",
         "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-pageAction.js"
     },
     "permissions": {
-        "status": "no"
+        "status": "not yet"
     },
     "platformKeys": {
         "status": "unlikely"
     },
     "power": {
-        "status": "no"
+        "status": "not yet"
     },
     "printerProvider": {
-        "status": "no"
+        "status": "not yet"
     },
     "privacy": {
-        "status": "no"
+        "status": "not yet"
     },
     "proxy": {
-        "status": "no"
+        "status": "not yet"
     },
     "runtime": {
         "status": "partial",
         "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-runtime.js"
     },
     "sessions": {
-        "status": "no"
+        "status": "not yet"
     },
     "storage": {
         "status": "partial",
         "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-storage.js"
     },
     "system.cpu": {
-        "status": "no"
+        "status": "not yet"
     },
     "system.memory": {
-        "status": "no"
+        "status": "not yet"
     },
     "system.storage": {
-        "status": "no"
+        "status": "not yet"
     },
     "tabs": {
         "status": "partial",
         "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js"
     },
     "tabsCapture": {
-        "status": "no"
+        "status": "not yet"
     },
     "topSites": {
-        "status": "no"
+        "status": "not yet"
     },
     "tts": {
         "status": "unlikely"
@@ -171,10 +172,10 @@
         "status": "unlikely"
     },
     "types": {
-        "status": "no"
+        "status": "not yet"
     },
     "vpnProvider": {
-        "status": "no"
+        "status": "not yet"
     },
     "wallpaper": {
         "status": "unlikely"
@@ -188,7 +189,7 @@
         "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webRequest.js"
     },
     "webstore": {
-        "status": "no"
+        "status": "not yet"
     },
     "windows": {
         "status": "partial",

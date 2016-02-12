@@ -19,11 +19,7 @@ td {
 	margin: 1px;
 }
 
-td a, td a:visited, td a:hover {
-	color: white;
-}
-
-h4 a, h4 a:visited {
+.anchor, .anchor:visited {
     color: lightgrey;
 }
 
