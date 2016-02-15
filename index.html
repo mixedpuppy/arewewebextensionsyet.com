@@ -590,7 +590,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
-<h5><a href="#tabs-bugs" class="anchor">&sect;</a> 14 bugs</h5>
+<h5><a href="#tabs-bugs" class="anchor">&sect;</a> 15 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></td>
@@ -606,6 +606,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238314">1238314: Implement browser.tabs opener functionality</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240326">1240326: Don't trigger reflow on tab events</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240631">1240631: Callback not called for chrome.tabs.move when tab is invalid</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248093">1248093: tab.move to index zero doesn't work with pinned tabs</a></td>
 	</tr>
 </table><h5><a href="#tabs-functions" class="anchor">&sect;</a> 23 functions</h5>
 <table class="table table-striped">
@@ -696,13 +697,14 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
-<h5><a href="#webNavigation-bugs" class="anchor">&sect;</a> 5 bugs</h5>
+<h5><a href="#webNavigation-bugs" class="anchor">&sect;</a> 6 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213478">1213478: Complete the implementation of chrome.webNavigation</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1239349">1239349: Implement webNavigation.onHistoryStateUpdated</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242561">1242561: Import missing events API schema file</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246125">1246125: Fix "moz-extensions:" URLs  reported as "jar:" URLs in webNavigation events</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248418">1248418: Implement errorOccurred in the webNavigation.getFrame/getAllFrames frame details</a></td>
 	</tr>
 </table><h5><a href="#webNavigation-functions" class="anchor">&sect;</a> 2 functions</h5>
 <table class="table table-striped">
@@ -764,9 +766,10 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-windows.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/windows">Chrome docs</a>
-<h5><a href="#windows-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5><a href="#windows-bugs" class="anchor">&sect;</a> 2 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213484">1213484: Complete the implementation of chrome.windows</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1247493">1247493: Implement the `tabId` property of browser.windows.create</a></td>
 	</tr>
 </table><h5><a href="#windows-functions" class="anchor">&sect;</a> 7 functions</h5>
 <table class="table table-striped">
