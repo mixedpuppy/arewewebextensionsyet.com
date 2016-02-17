@@ -43,10 +43,9 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/bookmarks">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-bookmarks.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/bookmarks">Chrome docs</a>
-<h5><a href="#bookmarks-bugs" class="anchor">&sect;</a> 3 bugs</h5>
+<h5><a href="#bookmarks-bugs" class="anchor">&sect;</a> 2 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213674">1213674: Complete the implementation of chrome.bookmarks</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213675">1213675: Set lastError in chrome.bookmarks</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1221764">1221764: Implement simple chrome.bookmarks events</a></td>
 	</tr>
 </table><h5><a href="#bookmarks-functions" class="anchor">&sect;</a> 13 functions</h5>
@@ -509,10 +508,11 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-runtime.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/runtime">Chrome docs</a>
-<h5><a href="#runtime-bugs" class="anchor">&sect;</a> 2 bugs</h5>
+<h5><a href="#runtime-bugs" class="anchor">&sect;</a> 3 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190682">1190682: Implement |connectNative| for open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213473">1213473: Complete the implementation of chrome.runtime</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1247435">1247435: Implement browser.runtime.onStartup</a></td>
 	</tr>
 </table><h5><a href="#runtime-functions" class="anchor">&sect;</a> 14 functions</h5>
 <table class="table table-striped">
@@ -590,7 +590,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
-<h5><a href="#tabs-bugs" class="anchor">&sect;</a> 15 bugs</h5>
+<h5><a href="#tabs-bugs" class="anchor">&sect;</a> 16 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></td>
@@ -606,7 +606,8 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238314">1238314: Implement browser.tabs opener functionality</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240326">1240326: Don't trigger reflow on tab events</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240631">1240631: Callback not called for chrome.tabs.move when tab is invalid</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248093">1248093: tab.move to index zero doesn't work with pinned tabs</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248460">1248460: Calling tabs.duplicated on a pinned tab</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248499">1248499: Implement tabs.detectLanguage</a></td>
 	</tr>
 </table><h5><a href="#tabs-functions" class="anchor">&sect;</a> 23 functions</h5>
 <table class="table table-striped">
@@ -697,7 +698,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
-<h5><a href="#webNavigation-bugs" class="anchor">&sect;</a> 6 bugs</h5>
+<h5><a href="#webNavigation-bugs" class="anchor">&sect;</a> 7 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213478">1213478: Complete the implementation of chrome.webNavigation</a></td>
@@ -705,6 +706,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242561">1242561: Import missing events API schema file</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246125">1246125: Fix "moz-extensions:" URLs  reported as "jar:" URLs in webNavigation events</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248418">1248418: Implement errorOccurred in the webNavigation.getFrame/getAllFrames frame details</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248426">1248426: processId in the webNavigation API</a></td>
 	</tr>
 </table><h5><a href="#webNavigation-functions" class="anchor">&sect;</a> 2 functions</h5>
 <table class="table table-striped">
