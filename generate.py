@@ -72,7 +72,7 @@ def formatted(data):
             pile_of_bugs = bugs(api)
 
         if pile_of_bugs:
-            res += '<h5><a id="%s-bugs" class="anchor">&sect;</a> %s bugs</h5>\n' % (api, len(pile_of_bugs['bugs']))
+            res += '<h5 id="%s-bugs"><a href="#%s-bugs" class="anchor">&sect;</a> %s bugs</h5>\n' % (api, api, len(pile_of_bugs['bugs']))
             res += '<table class="table table-striped">\n'
             for bug in pile_of_bugs['bugs']:
                 res += '\t<tr>'
