@@ -72,7 +72,7 @@ def formatted(data):
             pile_of_bugs = bugs(api)
 
         if pile_of_bugs:
-            res += '<h5><a href="#%s-bugs" class="anchor">&sect;</a> %s bugs</h5>\n' % (api, len(pile_of_bugs['bugs']))
+            res += '<h5><a id="%s-bugs" class="anchor">&sect;</a> %s bugs</h5>\n' % (api, len(pile_of_bugs['bugs']))
             res += '<table class="table table-striped">\n'
             for bug in pile_of_bugs['bugs']:
                 res += '\t<tr>'
@@ -92,7 +92,7 @@ def htmlify_schema(res, schema, type_, api):
     if not schema:
         return res
 
-    res += '<h5><a href="#%s-%s" class="anchor">&sect;</a> %s %s</h5>\n' % (api, type_, len(schema), type_)
+    res += '<h5><a id="%s-%s" class="anchor">&sect;</a> %s %s</h5>\n' % (api, type_, len(schema), type_)
     res += '<table class="table table-striped">\n'
     for key, value in schema.items():
         res += '\t<tr>'
