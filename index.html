@@ -27,7 +27,7 @@
 			<h2>APIs</h2>
 				<h4 id="accessibilityFeatures"><a href="#accessibilityFeatures" class="anchor">&sect;</a> accessibilityFeatures&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/accessibilityFeatures">Chrome docs</a>
-<h5><a id="accessibilityFeatures-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="accessibilityFeatures-bugs"><a href="#accessibilityFeatures-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
@@ -35,7 +35,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/alarms">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-alarms.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/alarms">Chrome docs</a>
-<h5><a id="alarms-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="alarms-bugs"><a href="#alarms-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
@@ -43,7 +43,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/bookmarks">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-bookmarks.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/bookmarks">Chrome docs</a>
-<h5><a id="bookmarks-bugs" class="anchor">&sect;</a> 2 bugs</h5>
+<h5 id="bookmarks-bugs"><a href="#bookmarks-bugs" class="anchor">&sect;</a> 2 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213674">1213674: Complete the implementation of chrome.bookmarks</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1221764">1221764: Implement simple chrome.bookmarks events</a></td>
@@ -79,7 +79,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-browserAction.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/browserAction">Chrome docs</a>
-<h5><a id="browserAction-bugs" class="anchor">&sect;</a> 8 bugs</h5>
+<h5 id="browserAction-bugs"><a href="#browserAction-bugs" class="anchor">&sect;</a> 8 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1203738">1203738: Update browserAction and pageAction icons after pixel density change</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1207591">1207591: badge background color - provide 3 recommended colors</a></td>
@@ -112,16 +112,15 @@
 	</blockquote>
 	<h4 id="browsingData"><a href="#browsingData" class="anchor">&sect;</a> browsingData&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/browsingData">Chrome docs</a>
-<h5><a id="browsingData-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="browsingData-bugs"><a href="#browsingData-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="commands"><a href="#commands" class="anchor">&sect;</a> commands&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/commands">Chrome docs</a>
-<h5><a id="commands-bugs" class="anchor">&sect;</a> 11 bugs</h5>
+<h5 id="commands-bugs"><a href="#commands-bugs" class="anchor">&sect;</a> 10 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240350">1240350: commands API not supported</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242557">1242557: [commands] Import missing commands API schema file</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246024">1246024: [commands] Add in the Manifest schema for chrome.commands</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246028">1246028: [commands] Implement chrome.commands.getAll</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246029">1246029: [commands] Implement chrome.commands.onCommand</a></td>
@@ -132,10 +131,18 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246038">1246038: [commands] Implement all of the supported keys</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246042">1246042: [commands] Use the keyset element to listen for registered commands</a></td>
 	</tr>
-</table>	</blockquote>
+</table><h5><a id="commands-functions" class="anchor">&sect;</a> 1 functions</h5>
+<table class="table table-striped">
+	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.commands.getAll()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 230</span></td></tr>
+</table>
+<h5><a id="commands-events" class="anchor">&sect;</a> 1 events</h5>
+<table class="table table-striped">
+	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.commands.onCommand</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 119</span></td></tr>
+</table>
+	</blockquote>
 	<h4 id="contentSettings"><a href="#contentSettings" class="anchor">&sect;</a> contentSettings&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/contentSettings">Chrome docs</a>
-<h5><a id="contentSettings-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="contentSettings-bugs"><a href="#contentSettings-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
@@ -143,7 +150,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/contextMenus">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-contextMenus.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/contextMenus">Chrome docs</a>
-<h5><a id="contextMenus-bugs" class="anchor">&sect;</a> 4 bugs</h5>
+<h5 id="contextMenus-bugs"><a href="#contextMenus-bugs" class="anchor">&sect;</a> 4 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1215375">1215375: Implement checkboxes, radio groups, and icons for context menu items</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1215376">1215376: Implement onBeforeShow event</a></td>
@@ -166,7 +173,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-cookies.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/cookies">Chrome docs</a>
-<h5><a id="cookies-bugs" class="anchor">&sect;</a> 2 bugs</h5>
+<h5 id="cookies-bugs"><a href="#cookies-bugs" class="anchor">&sect;</a> 2 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210997">1210997: See if we can use nsCookieService for cookie matching in chrome.cookies</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238269">1238269: Setting session cookie using chrome.cookies.set fails</a></td>
@@ -186,53 +193,53 @@
 	</blockquote>
 	<h4 id="debugger"><a href="#debugger" class="anchor">&sect;</a> debugger&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/debugger">Chrome docs</a>
-<h5><a id="debugger-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="debugger-bugs"><a href="#debugger-bugs" class="anchor">&sect;</a> 1 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1241448">1241448: Support chrome.debugger</a></td>
 	</tr>
 </table>	</blockquote>
 	<h4 id="declarativeContent"><a href="#declarativeContent" class="anchor">&sect;</a> declarativeContent&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/declarativeContent">Chrome docs</a>
-<h5><a id="declarativeContent-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="declarativeContent-bugs"><a href="#declarativeContent-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="desktopCapture"><a href="#desktopCapture" class="anchor">&sect;</a> desktopCapture&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/desktopCapture">Chrome docs</a>
-<h5><a id="desktopCapture-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="desktopCapture-bugs"><a href="#desktopCapture-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="devtools.inspectedWindow"><a href="#devtools.inspectedWindow" class="anchor">&sect;</a> devtools.inspectedWindow&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/devtools.inspectedWindow">Chrome docs</a>
-<h5><a id="devtools.inspectedWindow-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="devtools.inspectedWindow-bugs"><a href="#devtools.inspectedWindow-bugs" class="anchor">&sect;</a> 1 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211859">1211859: Implement devtools API for open extension API</a></td>
 	</tr>
 </table>	</blockquote>
 	<h4 id="devtools.network"><a href="#devtools.network" class="anchor">&sect;</a> devtools.network&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/devtools.network">Chrome docs</a>
-<h5><a id="devtools.network-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="devtools.network-bugs"><a href="#devtools.network-bugs" class="anchor">&sect;</a> 1 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211859">1211859: Implement devtools API for open extension API</a></td>
 	</tr>
 </table>	</blockquote>
 	<h4 id="devtools.panels"><a href="#devtools.panels" class="anchor">&sect;</a> devtools.panels&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/devtools.panels">Chrome docs</a>
-<h5><a id="devtools.panels-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="devtools.panels-bugs"><a href="#devtools.panels-bugs" class="anchor">&sect;</a> 1 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211859">1211859: Implement devtools API for open extension API</a></td>
 	</tr>
 </table>	</blockquote>
 	<h4 id="documentScan"><a href="#documentScan" class="anchor">&sect;</a> documentScan&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/documentScan">Chrome docs</a>
-<h5><a id="documentScan-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="documentScan-bugs"><a href="#documentScan-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="downloads"><a href="#downloads" class="anchor">&sect;</a> downloads&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/downloads">Chrome docs</a>
-<h5><a id="downloads-bugs" class="anchor">&sect;</a> 19 bugs</h5>
+<h5 id="downloads-bugs"><a href="#downloads-bugs" class="anchor">&sect;</a> 19 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213445">1213445: [tracking] Implement chrome.downloads</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245597">1245597: Implement chrome.downloads.download()</a></td>
@@ -280,13 +287,13 @@
 	</blockquote>
 	<h4 id="enterprise.platformKeys"><a href="#enterprise.platformKeys" class="anchor">&sect;</a> enterprise.platformKeys&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/enterprise.platformKeys">Chrome docs</a>
-<h5><a id="enterprise.platformKeys-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="enterprise.platformKeys-bugs"><a href="#enterprise.platformKeys-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="events"><a href="#events" class="anchor">&sect;</a> events&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/events">Chrome docs</a>
-<h5><a id="events-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="events-bugs"><a href="#events-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
@@ -294,7 +301,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/extension">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-extension.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/extension">Chrome docs</a>
-<h5><a id="extension-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="extension-bugs"><a href="#extension-bugs" class="anchor">&sect;</a> 1 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213426">1213426: Complete the implementation of chrome.extension</a></td>
 	</tr>
@@ -315,37 +322,37 @@
 	</blockquote>
 	<h4 id="extensionTypes"><a href="#extensionTypes" class="anchor">&sect;</a> extensionTypes&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/extensionTypes">Chrome docs</a>
-<h5><a id="extensionTypes-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="extensionTypes-bugs"><a href="#extensionTypes-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="fileBrowserHandler"><a href="#fileBrowserHandler" class="anchor">&sect;</a> fileBrowserHandler&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/fileBrowserHandler">Chrome docs</a>
-<h5><a id="fileBrowserHandler-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="fileBrowserHandler-bugs"><a href="#fileBrowserHandler-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="fileSystemProvider"><a href="#fileSystemProvider" class="anchor">&sect;</a> fileSystemProvider&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/fileSystemProvider">Chrome docs</a>
-<h5><a id="fileSystemProvider-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="fileSystemProvider-bugs"><a href="#fileSystemProvider-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="fontSettings"><a href="#fontSettings" class="anchor">&sect;</a> fontSettings&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/fontSettings">Chrome docs</a>
-<h5><a id="fontSettings-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="fontSettings-bugs"><a href="#fontSettings-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="gcm"><a href="#gcm" class="anchor">&sect;</a> gcm&nbsp;<span class="label label-default">unlikely</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/gcm">Chrome docs</a>
-<h5><a id="gcm-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="gcm-bugs"><a href="#gcm-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="history"><a href="#history" class="anchor">&sect;</a> history&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/history">Chrome docs</a>
-<h5><a id="history-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 1 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208334">1208334: Implement history API for open extension API</a></td>
 	</tr>
@@ -354,17 +361,16 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/i18n">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-i18n.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/i18n">Chrome docs</a>
-<h5><a id="i18n-bugs" class="anchor">&sect;</a> 5 bugs</h5>
+<h5 id="i18n-bugs"><a href="#i18n-bugs" class="anchor">&sect;</a> 4 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208763">1208763: Treat chrome-extension:// and moz-extension:// schemes as equivalent</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213450">1213450: Complete the implementation of chrome.i18n.getAcceptLanguages</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246748">1246748: Complete the implementation of chrome.i18n.getUILanguage</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246749">1246749: Complete the implementation of chrome.i18n</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246754">1246754: Complete the implementation of chrome.i18n.detectLanguage</a></td>
 	</tr>
 </table><h5><a id="i18n-functions" class="anchor">&sect;</a> 4 functions</h5>
 <table class="table table-striped">
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/I18n/getUILanguage">chrome.i18n.getUILanguage()</a></td><td></td><td><span class="label label-info">rank 155</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/I18n/getUILanguage">chrome.i18n.getUILanguage()</a></td><td></td><td><span class="label label-info">rank 155</span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/I18n/getMessage">chrome.i18n.getMessage()</a></td><td></td><td><span class="label label-info">rank 11</span></td></tr>
 	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/I18n/detectLanguage">chrome.i18n.detectLanguage()</a></td><td></td><td><span class="label label-info">rank 348</span></td></tr>
 	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/I18n/getAcceptLanguages">chrome.i18n.getAcceptLanguages()</a></td><td></td><td><span class="label label-info">rank 166</span></td></tr>
@@ -372,7 +378,7 @@
 	</blockquote>
 	<h4 id="identity"><a href="#identity" class="anchor">&sect;</a> identity&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/identity">Chrome docs</a>
-<h5><a id="identity-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="identity-bugs"><a href="#identity-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
@@ -380,7 +386,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/idle">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-idle.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/idle">Chrome docs</a>
-<h5><a id="idle-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="idle-bugs"><a href="#idle-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table><h5><a id="idle-functions" class="anchor">&sect;</a> 2 functions</h5>
@@ -395,19 +401,19 @@
 	</blockquote>
 	<h4 id="inputIME"><a href="#inputIME" class="anchor">&sect;</a> inputIME&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/inputIME">Chrome docs</a>
-<h5><a id="inputIME-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="inputIME-bugs"><a href="#inputIME-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="management"><a href="#management" class="anchor">&sect;</a> management&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/management">Chrome docs</a>
-<h5><a id="management-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="management-bugs"><a href="#management-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="networking.config"><a href="#networking.config" class="anchor">&sect;</a> networking.config&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/networking.config">Chrome docs</a>
-<h5><a id="networking.config-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="networking.config-bugs"><a href="#networking.config-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
@@ -415,7 +421,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/notifications">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-notifications.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/notifications">Chrome docs</a>
-<h5><a id="notifications-bugs" class="anchor">&sect;</a> 4 bugs</h5>
+<h5 id="notifications-bugs"><a href="#notifications-bugs" class="anchor">&sect;</a> 4 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190681">1190681: Browser extension |notifications| API needs support for buttons in notifications</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1205730">1205730: chrome.notification fail in first try</a></td>
@@ -425,14 +431,14 @@
 </table>	</blockquote>
 	<h4 id="omnibox"><a href="#omnibox" class="anchor">&sect;</a> omnibox&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/omnibox">Chrome docs</a>
-<h5><a id="omnibox-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="omnibox-bugs"><a href="#omnibox-bugs" class="anchor">&sect;</a> 1 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1166831">1166831: It should be possible to add suggestions to the awesome bar via Add-on SDK module</a></td>
 	</tr>
 </table>	</blockquote>
 	<h4 id="options"><a href="#options" class="anchor">&sect;</a> options&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/options">Chrome docs</a>
-<h5><a id="options-bugs" class="anchor">&sect;</a> 3 bugs</h5>
+<h5 id="options-bugs"><a href="#options-bugs" class="anchor">&sect;</a> 3 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1212684">1212684: Implement options_page manifest property for open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1212685">1212685: Implement options_ui manifest property for open extension API</a></td>
@@ -443,7 +449,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/pageAction">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-pageAction.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/pageAction">Chrome docs</a>
-<h5><a id="pageAction-bugs" class="anchor">&sect;</a> 3 bugs</h5>
+<h5 id="pageAction-bugs"><a href="#pageAction-bugs" class="anchor">&sect;</a> 3 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1222454">1222454: Not possible to set the width and height of the popup</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1225633">1225633: Better default styles for WebExtension popups.</a></td>
@@ -466,7 +472,7 @@
 	</blockquote>
 	<h4 id="permissions"><a href="#permissions" class="anchor">&sect;</a> permissions&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/permissions">Chrome docs</a>
-<h5><a id="permissions-bugs" class="anchor">&sect;</a> 4 bugs</h5>
+<h5 id="permissions-bugs"><a href="#permissions-bugs" class="anchor">&sect;</a> 4 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197420">1197420: Implement permissions API and optional_permissions manifest property for open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197451">1197451: Support clipboard access in open extension API</a></td>
@@ -476,31 +482,31 @@
 </table>	</blockquote>
 	<h4 id="platformKeys"><a href="#platformKeys" class="anchor">&sect;</a> platformKeys&nbsp;<span class="label label-default">unlikely</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/platformKeys">Chrome docs</a>
-<h5><a id="platformKeys-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="platformKeys-bugs"><a href="#platformKeys-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="power"><a href="#power" class="anchor">&sect;</a> power&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/power">Chrome docs</a>
-<h5><a id="power-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="power-bugs"><a href="#power-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="printerProvider"><a href="#printerProvider" class="anchor">&sect;</a> printerProvider&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/printerProvider">Chrome docs</a>
-<h5><a id="printerProvider-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="printerProvider-bugs"><a href="#printerProvider-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="privacy"><a href="#privacy" class="anchor">&sect;</a> privacy&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/privacy">Chrome docs</a>
-<h5><a id="privacy-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="privacy-bugs"><a href="#privacy-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="proxy"><a href="#proxy" class="anchor">&sect;</a> proxy&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/proxy">Chrome docs</a>
-<h5><a id="proxy-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="proxy-bugs"><a href="#proxy-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
@@ -508,7 +514,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-runtime.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/runtime">Chrome docs</a>
-<h5><a id="runtime-bugs" class="anchor">&sect;</a> 3 bugs</h5>
+<h5 id="runtime-bugs"><a href="#runtime-bugs" class="anchor">&sect;</a> 3 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190682">1190682: Implement |connectNative| for open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213473">1213473: Complete the implementation of chrome.runtime</a></td>
@@ -548,7 +554,7 @@
 	</blockquote>
 	<h4 id="sessions"><a href="#sessions" class="anchor">&sect;</a> sessions&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/sessions">Chrome docs</a>
-<h5><a id="sessions-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="sessions-bugs"><a href="#sessions-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
@@ -556,7 +562,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/storage">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-storage.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/storage">Chrome docs</a>
-<h5><a id="storage-bugs" class="anchor">&sect;</a> 4 bugs</h5>
+<h5 id="storage-bugs"><a href="#storage-bugs" class="anchor">&sect;</a> 4 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197346">1197346: Provide access to storage API from content scripts</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213475">1213475: Complete the implementation of chrome.storage</a></td>
@@ -570,19 +576,19 @@
 	</blockquote>
 	<h4 id="system.cpu"><a href="#system.cpu" class="anchor">&sect;</a> system.cpu&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/system.cpu">Chrome docs</a>
-<h5><a id="system.cpu-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="system.cpu-bugs"><a href="#system.cpu-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="system.memory"><a href="#system.memory" class="anchor">&sect;</a> system.memory&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/system.memory">Chrome docs</a>
-<h5><a id="system.memory-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="system.memory-bugs"><a href="#system.memory-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="system.storage"><a href="#system.storage" class="anchor">&sect;</a> system.storage&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/system.storage">Chrome docs</a>
-<h5><a id="system.storage-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="system.storage-bugs"><a href="#system.storage-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
@@ -590,7 +596,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
-<h5><a id="tabs-bugs" class="anchor">&sect;</a> 14 bugs</h5>
+<h5 id="tabs-bugs"><a href="#tabs-bugs" class="anchor">&sect;</a> 14 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></td>
@@ -652,43 +658,43 @@
 	</blockquote>
 	<h4 id="tabsCapture"><a href="#tabsCapture" class="anchor">&sect;</a> tabsCapture&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/tabsCapture">Chrome docs</a>
-<h5><a id="tabsCapture-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="tabsCapture-bugs"><a href="#tabsCapture-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="topSites"><a href="#topSites" class="anchor">&sect;</a> topSites&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/topSites">Chrome docs</a>
-<h5><a id="topSites-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="topSites-bugs"><a href="#topSites-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="tts"><a href="#tts" class="anchor">&sect;</a> tts&nbsp;<span class="label label-default">unlikely</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/tts">Chrome docs</a>
-<h5><a id="tts-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="tts-bugs"><a href="#tts-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="ttsEngine"><a href="#ttsEngine" class="anchor">&sect;</a> ttsEngine&nbsp;<span class="label label-default">unlikely</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/ttsEngine">Chrome docs</a>
-<h5><a id="ttsEngine-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="ttsEngine-bugs"><a href="#ttsEngine-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="types"><a href="#types" class="anchor">&sect;</a> types&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/types">Chrome docs</a>
-<h5><a id="types-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="types-bugs"><a href="#types-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="vpnProvider"><a href="#vpnProvider" class="anchor">&sect;</a> vpnProvider&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/vpnProvider">Chrome docs</a>
-<h5><a id="vpnProvider-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="vpnProvider-bugs"><a href="#vpnProvider-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
 	<h4 id="wallpaper"><a href="#wallpaper" class="anchor">&sect;</a> wallpaper&nbsp;<span class="label label-default">unlikely</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/wallpaper">Chrome docs</a>
-<h5><a id="wallpaper-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="wallpaper-bugs"><a href="#wallpaper-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
@@ -696,7 +702,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
-<h5><a id="webNavigation-bugs" class="anchor">&sect;</a> 7 bugs</h5>
+<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 7 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213478">1213478: Complete the implementation of chrome.webNavigation</a></td>
@@ -728,7 +734,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webRequest.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webRequest">Chrome docs</a>
-<h5><a id="webRequest-bugs" class="anchor">&sect;</a> 8 bugs</h5>
+<h5 id="webRequest-bugs"><a href="#webRequest-bugs" class="anchor">&sect;</a> 8 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190689">1190689: Implement webRequest auth and redirect handlers</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1201979">1201979: Support requestBody in onBeforeRequest</a></td>
@@ -758,7 +764,7 @@
 	</blockquote>
 	<h4 id="webstore"><a href="#webstore" class="anchor">&sect;</a> webstore&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/webstore">Chrome docs</a>
-<h5><a id="webstore-bugs" class="anchor">&sect;</a> 0 bugs</h5>
+<h5 id="webstore-bugs"><a href="#webstore-bugs" class="anchor">&sect;</a> 0 bugs</h5>
 <table class="table table-striped">
 	</tr>
 </table>	</blockquote>
@@ -766,7 +772,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-windows.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/windows">Chrome docs</a>
-<h5><a id="windows-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="windows-bugs"><a href="#windows-bugs" class="anchor">&sect;</a> 1 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213484">1213484: Complete the implementation of chrome.windows</a></td>
 	</tr>
