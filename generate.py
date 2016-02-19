@@ -92,7 +92,7 @@ def htmlify_schema(res, schema, type_, api):
     if not schema:
         return res
 
-    res += '<h5><a id="%s-%s" class="anchor">&sect;</a> %s %s</h5>\n' % (api, type_, len(schema), type_)
+    res += '<h5 id="%s-%s"><a href="#%s-%s" class="anchor">&sect;</a> %s %s</h5>\n' % (api, type_, api, type_, len(schema), type_)
     res += '<table class="table table-striped">\n'
     for key, value in schema.items():
         res += '\t<tr>'
