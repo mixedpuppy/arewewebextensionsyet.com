@@ -118,13 +118,12 @@
 </table>	</blockquote>
 	<h4 id="commands"><a href="#commands" class="anchor">&sect;</a> commands&nbsp;<span class="label label-default">not yet</span></h4>
 <blockquote>		<a href="https://developer.chrome.com/extensions/commands">Chrome docs</a>
-<h5 id="commands-bugs"><a href="#commands-bugs" class="anchor">&sect;</a> 10 bugs</h5>
+<h5 id="commands-bugs"><a href="#commands-bugs" class="anchor">&sect;</a> 9 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240350">1240350: commands API not supported</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246024">1246024: [commands] Add in the Manifest schema for chrome.commands</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246028">1246028: [commands] Implement chrome.commands.getAll</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246029">1246029: [commands] Implement chrome.commands.onCommand</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246031">1246031: [commands] Create a utility for obtaining platform information</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246032">1246032: [commands] Create a utility for converting chrome keyboard commands into firefox keyboard commands</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246034">1246034: [commands] Add support for _execute_browser_action</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246035">1246035: [commands] Add support for _execute_page_action</a></td>
@@ -514,11 +513,13 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-runtime.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/runtime">Chrome docs</a>
-<h5 id="runtime-bugs"><a href="#runtime-bugs" class="anchor">&sect;</a> 3 bugs</h5>
+<h5 id="runtime-bugs"><a href="#runtime-bugs" class="anchor">&sect;</a> 5 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190682">1190682: Implement |connectNative| for open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213473">1213473: Complete the implementation of chrome.runtime</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220154">1220154: chrome.runtime.lastError should be set when sending unhandled content script message</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1247435">1247435: Implement browser.runtime.onStartup</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1249830">1249830: Multiple runtime.onMessage listeners unable to respond</a></td>
 	</tr>
 </table><h5 id="runtime-functions"><a href="#runtime-functions" class="anchor">&sect;</a> 14 functions</h5>
 <table class="table table-striped">
@@ -596,7 +597,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
-<h5 id="tabs-bugs"><a href="#tabs-bugs" class="anchor">&sect;</a> 14 bugs</h5>
+<h5 id="tabs-bugs"><a href="#tabs-bugs" class="anchor">&sect;</a> 13 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></td>
@@ -606,7 +607,6 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1223254">1223254: Figure out when tabs API callbacks should fire, and make them fire at the right time</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1227462">1227462: chrome.tabs.update/create APIs should call checkLoadURI with DISALLOW_INHERIT_PRINCIPAL</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238310">1238310: Implement browser.tabs zoom APIs</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238313">1238313: Implement missing browser.tabs events</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238314">1238314: Implement browser.tabs opener functionality</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240326">1240326: Don't trigger reflow on tab events</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240631">1240631: Callback not called for chrome.tabs.move when tab is invalid</a></td>
