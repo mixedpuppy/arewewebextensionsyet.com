@@ -172,6 +172,7 @@ def process_type(type, data):
         mdn += '()'
     url = MDN_URL % (wikify(namespace), data['name'])
     if CHECK_URL:
+        print url
         url = url if check_url(url) else None
     parsed_schema[namespace][type][data['name']] = {
         'usage': full,
