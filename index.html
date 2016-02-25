@@ -43,10 +43,11 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/bookmarks">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-bookmarks.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/bookmarks">Chrome docs</a>
-<h5 id="bookmarks-bugs"><a href="#bookmarks-bugs" class="anchor">&sect;</a> 2 bugs</h5>
+<h5 id="bookmarks-bugs"><a href="#bookmarks-bugs" class="anchor">&sect;</a> 3 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213674">1213674: Complete the implementation of chrome.bookmarks</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1221764">1221764: Implement simple chrome.bookmarks events</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1251269">1251269: Implement browser.bookmarks.getRecent()</a></td>
 	</tr>
 </table><h5 id="bookmarks-functions"><a href="#bookmarks-functions" class="anchor">&sect;</a> 13 functions</h5>
 <table class="table table-striped">
@@ -120,7 +121,7 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/commands">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-commands.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/commands">Chrome docs</a>
-<h5 id="commands-bugs"><a href="#commands-bugs" class="anchor">&sect;</a> 8 bugs</h5>
+<h5 id="commands-bugs"><a href="#commands-bugs" class="anchor">&sect;</a> 7 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240350">1240350: commands API not supported</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246024">1246024: [commands] Add in the Manifest schema for chrome.commands</a></td>
@@ -129,7 +130,6 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246032">1246032: [commands] Create a utility for converting chrome keyboard commands into firefox keyboard commands</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246034">1246034: [commands] Add support for _execute_browser_action</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246035">1246035: [commands] Add support for _execute_page_action</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246042">1246042: [commands] Use the keyset element to listen for registered commands</a></td>
 	</tr>
 </table><h5 id="commands-functions"><a href="#commands-functions" class="anchor">&sect;</a> 1 functions</h5>
 <table class="table table-striped">
@@ -360,12 +360,10 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/i18n">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-i18n.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/i18n">Chrome docs</a>
-<h5 id="i18n-bugs"><a href="#i18n-bugs" class="anchor">&sect;</a> 4 bugs</h5>
+<h5 id="i18n-bugs"><a href="#i18n-bugs" class="anchor">&sect;</a> 2 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208763">1208763: Treat chrome-extension:// and moz-extension:// schemes as equivalent</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213450">1213450: Complete the implementation of chrome.i18n.getAcceptLanguages</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246749">1246749: Complete the implementation of chrome.i18n</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246754">1246754: Complete the implementation of chrome.i18n.detectLanguage</a></td>
 	</tr>
 </table><h5 id="i18n-functions"><a href="#i18n-functions" class="anchor">&sect;</a> 4 functions</h5>
 <table class="table table-striped">
@@ -701,11 +699,10 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
-<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 7 bugs</h5>
+<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 6 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213478">1213478: Complete the implementation of chrome.webNavigation</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1239349">1239349: Implement webNavigation.onHistoryStateUpdated</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242561">1242561: Import missing events API schema file</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246125">1246125: Fix "moz-extensions:" URLs  reported as "jar:" URLs in webNavigation events</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248418">1248418: Implement errorOccurred in the webNavigation.getFrame/getAllFrames frame details</a></td>
