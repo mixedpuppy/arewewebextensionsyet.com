@@ -54,7 +54,8 @@
         "status": "not yet"
     },
     "downloads": {
-        "status": "not yet"
+        "status": "partial",
+        "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-downloads.js"
     },
     "enterprise.platformKeys": {
         "status": "not yet"
