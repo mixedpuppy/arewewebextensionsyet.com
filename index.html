@@ -126,9 +126,9 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240350">1240350: commands API not supported</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246024">1246024: [commands] Add in the Manifest schema for chrome.commands</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246029">1246029: [commands] Implement chrome.commands.onCommand</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246032">1246032: [commands] Create a utility for converting chrome keyboard commands into firefox keyboard commands</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246034">1246034: [commands] Add support for _execute_browser_action</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246035">1246035: [commands] Add support for _execute_page_action</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1251795">1251795: [commands] Add support for Chrome's media keys</a></td>
 	</tr>
 </table><h5 id="commands-functions"><a href="#commands-functions" class="anchor">&sect;</a> 1 functions</h5>
 <table class="table table-striped">
@@ -149,12 +149,13 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/contextMenus">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-contextMenus.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/contextMenus">Chrome docs</a>
-<h5 id="contextMenus-bugs"><a href="#contextMenus-bugs" class="anchor">&sect;</a> 4 bugs</h5>
+<h5 id="contextMenus-bugs"><a href="#contextMenus-bugs" class="anchor">&sect;</a> 5 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1215375">1215375: Implement checkboxes, radio groups, and icons for context menu items</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1215376">1215376: Implement onBeforeShow event</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1215377">1215377: Implement event page support for context menus</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246044">1246044: When you delete an extension which modifies the context menu and then install an extension, the menu items from the deleted extension still show up</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1250685">1250685: contextMenus is strange when context doesn't apply</a></td>
 	</tr>
 </table><h5 id="contextMenus-functions"><a href="#contextMenus-functions" class="anchor">&sect;</a> 4 functions</h5>
 <table class="table table-striped">
@@ -359,10 +360,9 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/i18n">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-i18n.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/i18n">Chrome docs</a>
-<h5 id="i18n-bugs"><a href="#i18n-bugs" class="anchor">&sect;</a> 2 bugs</h5>
+<h5 id="i18n-bugs"><a href="#i18n-bugs" class="anchor">&sect;</a> 1 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208763">1208763: Treat chrome-extension:// and moz-extension:// schemes as equivalent</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246749">1246749: Complete the implementation of chrome.i18n</a></td>
 	</tr>
 </table><h5 id="i18n-functions"><a href="#i18n-functions" class="anchor">&sect;</a> 4 functions</h5>
 <table class="table table-striped">
@@ -593,15 +593,13 @@
 <blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
-<h5 id="tabs-bugs"><a href="#tabs-bugs" class="anchor">&sect;</a> 13 bugs</h5>
+<h5 id="tabs-bugs"><a href="#tabs-bugs" class="anchor">&sect;</a> 11 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213993">1213993: Support frameId/allFrames/runAt in browser.tabs.executeScript and insertCSS</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1219940">1219940: [tracking] Support Mega as a WebExtension</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220124">1220124: chrome.tabs.onHighlighted undefined</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1223254">1223254: Figure out when tabs API callbacks should fire, and make them fire at the right time</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1227462">1227462: chrome.tabs.update/create APIs should call checkLoadURI with DISALLOW_INHERIT_PRINCIPAL</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238310">1238310: Implement browser.tabs zoom APIs</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1238314">1238314: Implement browser.tabs opener functionality</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240326">1240326: Don't trigger reflow on tab events</a></td>
