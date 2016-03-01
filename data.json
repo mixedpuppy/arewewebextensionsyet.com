@@ -18,7 +18,7 @@
         "status": "not yet"
     },
     "commands": {
-        "status": "partial",
+        "status": "complete",
         "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-commands.js"
     },
     "contentSettings": {
