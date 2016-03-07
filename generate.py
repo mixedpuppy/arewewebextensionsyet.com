@@ -53,12 +53,20 @@ status_lookup = {
     "unlikely": "default"
 }
 
+platform_lookup = {
+    "android": "warning",
+    "desktop": "success"
+}
+
 
 def formatted(data):
     res = ''
     for api, values in sorted(data.items()):
         res += '\t<h4 id="%s"><a href="#%s" class="anchor">&sect;</a> %s' % (api, api, api)
-        res += '&nbsp;<span class="label label-%s">%s</span></h4>\n' % (status_lookup.get(values['status']), values['status'])
+        res += '&nbsp;<span class="label label-%s">%s</span>\n' % (status_lookup.get(values['status']), values['status'])
+        for platform in values.get('platform', []):
+            res += '&nbsp;<span class="label label-%s">%s</span>\n' % (platform_lookup.get(platform), platform)
+        res += '</h4>'
         res += '<blockquote>'
         if values['status'] in ['complete', 'partial']:
             res += '\t\t<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/%s">Firefox docs</a> &bull;\n' % api
