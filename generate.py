@@ -62,6 +62,7 @@ platform_lookup = {
 def formatted(data):
     res = ''
     for api, values in sorted(data.items()):
+        res += '<div class="api-group" style="display: block">'
         res += '\t<h4 id="%s"><a href="#%s" class="anchor">&sect;</a> %s' % (api, api, api)
         res += '&nbsp;<span class="label label-%s">%s</span>\n' % (status_lookup.get(values['status']), values['status'])
         for platform in values.get('platform', []):
@@ -93,6 +94,7 @@ def formatted(data):
         res = htmlify_schema(res, schemas.get('events', []), 'events', api)
 
         res += '\t</blockquote>\n'
+        res += '\t</div>\n'
     return res
 
 
