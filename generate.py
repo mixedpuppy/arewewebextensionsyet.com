@@ -50,7 +50,8 @@ status_lookup = {
     "complete": "success",
     "partial": "warning",
     "not yet": "default",
-    "unlikely": "default"
+    "unlikely": "default",
+    "no": "error"
 }
 
 platform_lookup = {
