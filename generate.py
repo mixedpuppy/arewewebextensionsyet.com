@@ -47,11 +47,11 @@ def bugs(whiteboard):
 
 
 status_lookup = {
-    "complete": "success",
-    "partial": "warning",
+    "complete": "primary",
+    "partial": "info",
     "not yet": "default",
     "unlikely": "default",
-    "no": "error"
+    "no": "danger"
 }
 
 platform_lookup = {
