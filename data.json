@@ -194,9 +194,6 @@
   "ttsEngine": {
     "status": "unlikely"
   },
-  "types": {
-    "status": "not yet"
-  },
   "webNavigation": {
     "status": "partial",
     "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js",
