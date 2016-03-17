@@ -29,8 +29,6 @@ def parse_usage():
             res[row['API']] = k
     return res
 
-parsed_usage = parse_usage()
-
 
 def bugs(whiteboard):
     res = requests.get(
@@ -173,19 +171,19 @@ def check_url(url):
     return res
 
 
-def process_type(type, data):
+def process_type(type_, data):
     namespace = parsed_schema['__current__']
     parsed_schema.setdefault(namespace, {})
-    parsed_schema[namespace].setdefault(type, {})
+    parsed_schema[namespace].setdefault(type_, {})
     full = 'chrome.%s.%s' % (namespace, data['name'])
     mdn = full[:]
-    if type == 'functions':
+    if type_ == 'functions':
         mdn += '()'
     url = MDN_URL % (wikify(namespace), data['name'])
     if CHECK_URL:
         print url
         url = url if check_url(url) else None
-    parsed_schema[namespace][type][data['name']] = {
+    parsed_schema[namespace][type_][data['name']] = {
         'usage': full,
         'full': mdn,
         'supported': not(data.get('unsupported')),
@@ -193,10 +191,12 @@ def process_type(type, data):
     }
 
 
-process_schemas(schema_locations)
+if __name__=='__main__':
+    parsed_usage = parse_usage()
+    process_schemas(schema_locations)
 
-data = json.load(open('data.json', 'r'))
-html = open('template.html', 'r').read().encode('utf8')
-data = formatted(data).encode('utf8')
-html = html.format(data=data)
-open('index.html', 'w').write(html)
+    data = json.load(open('data.json', 'r'))
+    html = open('template.html', 'r').read().encode('utf8')
+    data = formatted(data).encode('utf8')
+    html = html.format(data=data)
+    open('index.html', 'w').write(html)
