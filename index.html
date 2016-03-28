@@ -269,16 +269,12 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/downloads">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-downloads.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/downloads">Chrome docs</a>
-<h5 id="downloads-bugs"><a href="#downloads-bugs" class="anchor">&sect;</a> 19 bugs</h5>
+<h5 id="downloads-bugs"><a href="#downloads-bugs" class="anchor">&sect;</a> 16 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213445">1213445: [tracking] Implement chrome.downloads</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245606">1245606: Implement chrome.downloads.getFileIcon()</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245636">1245636: Implement chrome.downloads.open()</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245639">1245639: Implement chrome.downloads.show()</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245644">1245644: Implement chrome.downloads.removeFile()</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245645">1245645: Implement chrome.downloads.acceptDanger()</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245648">1245648: Implement chrome.downloads.drag()</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245651">1245651: Implement chrome.downloads.onErased</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245652">1245652: Implement chrome.downloads.onDeterminingFilename</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1247791">1247791: Implement options.saveAs for chrome.downloads.download()</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1247793">1247793: Implement POST for chrome.downloads.download()</a></td>
@@ -290,29 +286,30 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256269">1256269: Support endTime and estimatedEndTime in DownloadItem</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256691">1256691: Add test coverage for chrome.downloads.show() error states</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1257137">1257137: downloads.[pause/resume/cancel] are missing a try/catch around DownloadMap.fromId()</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1257581">1257581: Intermittent test_chrome_ext_downloads_misc.html | Cleanup function threw exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIFile.remove]" nsresult: "0x80004005 (NS_ERROR_FAILURE)" location: "JS frame :: setup/< :</a></td>
 	</tr>
 </table><h5 id="downloads-functions"><a href="#downloads-functions" class="anchor">&sect;</a> 14 functions</h5>
 <table class="table table-striped">
-	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.downloads.search()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 121</span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.downloads.pause()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 266</span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.downloads.getFileIcon()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 272</span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.downloads.resume()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 271</span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.downloads.show()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 243</span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.downloads.removeFile()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 252</span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.downloads.cancel()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 218</span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.downloads.drag()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 311</span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.downloads.erase()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 223</span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.downloads.acceptDanger()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 273</span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.downloads.showDefaultFolder()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 257</span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.downloads.download()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 92</span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.downloads.setShelfEnabled()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 247</span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.downloads.open()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 228</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/search">chrome.downloads.search()</a></td><td></td><td><span class="label label-info">rank 121</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/pause">chrome.downloads.pause()</a></td><td></td><td><span class="label label-info">rank 266</span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/getFileIcon">chrome.downloads.getFileIcon()</a></td><td></td><td><span class="label label-info">rank 272</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/resume">chrome.downloads.resume()</a></td><td></td><td><span class="label label-info">rank 271</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/show">chrome.downloads.show()</a></td><td></td><td><span class="label label-info">rank 243</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/removeFile">chrome.downloads.removeFile()</a></td><td></td><td><span class="label label-info">rank 252</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/cancel">chrome.downloads.cancel()</a></td><td></td><td><span class="label label-info">rank 218</span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/drag">chrome.downloads.drag()</a></td><td></td><td><span class="label label-info">rank 311</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/erase">chrome.downloads.erase()</a></td><td></td><td><span class="label label-info">rank 223</span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/acceptDanger">chrome.downloads.acceptDanger()</a></td><td></td><td><span class="label label-info">rank 273</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/showDefaultFolder">chrome.downloads.showDefaultFolder()</a></td><td></td><td><span class="label label-info">rank 257</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/download">chrome.downloads.download()</a></td><td></td><td><span class="label label-info">rank 92</span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/setShelfEnabled">chrome.downloads.setShelfEnabled()</a></td><td></td><td><span class="label label-info">rank 247</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/open">chrome.downloads.open()</a></td><td></td><td><span class="label label-info">rank 228</span></td></tr>
 </table>
 <h5 id="downloads-events"><a href="#downloads-events" class="anchor">&sect;</a> 3 events</h5>
 <table class="table table-striped">
-	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.downloads.onChanged</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 123</span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.downloads.onCreated</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 222</span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.downloads.onErased</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 324</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/onChanged">chrome.downloads.onChanged</a></td><td></td><td><span class="label label-info">rank 123</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/onCreated">chrome.downloads.onCreated</a></td><td></td><td><span class="label label-info">rank 222</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/onErased">chrome.downloads.onErased</a></td><td></td><td><span class="label label-info">rank 324</span></td></tr>
 </table>
 	</blockquote>
 	</div>
@@ -473,12 +470,11 @@
 	</div>
 <div class="api-group" style="display: block">	<h4 id="permissions"><a href="#permissions" class="anchor">&sect;</a> permissions&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/permissions">Chrome docs</a>
-<h5 id="permissions-bugs"><a href="#permissions-bugs" class="anchor">&sect;</a> 4 bugs</h5>
+<h5 id="permissions-bugs"><a href="#permissions-bugs" class="anchor">&sect;</a> 3 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197420">1197420: Implement permissions API and optional_permissions manifest property for open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1197451">1197451: Support clipboard access in open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1203233">1203233: Can't use geolocation in a WebExtension</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1237822">1237822: "tabs" permission is needed to query by URL</a></td>
 	</tr>
 </table>	</blockquote>
 	</div>
@@ -516,7 +512,7 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-runtime.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/runtime">Chrome docs</a>
-<h5 id="runtime-bugs"><a href="#runtime-bugs" class="anchor">&sect;</a> 6 bugs</h5>
+<h5 id="runtime-bugs"><a href="#runtime-bugs" class="anchor">&sect;</a> 7 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190682">1190682: Implement |connectNative| for open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213473">1213473: Complete the implementation of chrome.runtime</a></td>
@@ -524,6 +520,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1247435">1247435: Implement browser.runtime.onStartup</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1252871">1252871: Implement chrome.runtime.onInstalled</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1253643">1253643: Implement chrome.runtime.onMessageExternal</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1259944">1259944: runtime.sendMessage does not handle the three-argument form correctly.</a></td>
 	</tr>
 </table><h5 id="runtime-functions"><a href="#runtime-functions" class="anchor">&sect;</a> 14 functions</h5>
 <table class="table table-striped">
@@ -740,16 +737,14 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webRequest.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webRequest">Chrome docs</a>
-<h5 id="webRequest-bugs"><a href="#webRequest-bugs" class="anchor">&sect;</a> 9 bugs</h5>
+<h5 id="webRequest-bugs"><a href="#webRequest-bugs" class="anchor">&sect;</a> 7 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1176092">1176092: Test that redirectUrl works as documented in the WebRequest API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190689">1190689: Implement webRequest auth and redirect handlers</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1201979">1201979: Support requestBody in onBeforeRequest</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210990">1210990: Implement content-side hooks to handle WebRequest decisions which affect or are affected by the DOM.</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213483">1213483: Complete the implementation of chrome.webRequest</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1252596">1252596: Implement webRequest.onErrorOccurred</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1255894">1255894: Support a webRequest.onResponseData event to filter HTTP response bytes as they come</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256264">1256264: requestId should be a string</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256600">1256600: Keep WebRequest resilient to introduction of nsILoadInfo.frame(Outer|Inner)WindowId</a></td>
 	</tr>
 </table><h5 id="webRequest-functions"><a href="#webRequest-functions" class="anchor">&sect;</a> 1 functions</h5>
@@ -782,13 +777,10 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-windows.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/windows">Chrome docs</a>
-<h5 id="windows-bugs"><a href="#windows-bugs" class="anchor">&sect;</a> 5 bugs</h5>
+<h5 id="windows-bugs"><a href="#windows-bugs" class="anchor">&sect;</a> 2 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213484">1213484: Complete the implementation of chrome.windows</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1253129">1253129: Support focused=false in the browser.windows.create</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1253130">1253130: Support alwaysOnTop in the browser.windows.create</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1253133">1253133: Support changing size and position via browser.windows.update</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1253134">1253134: Support drawAttention in browser.windows.update</a></td>
 	</tr>
 </table><h5 id="windows-functions"><a href="#windows-functions" class="anchor">&sect;</a> 7 functions</h5>
 <table class="table table-striped">
