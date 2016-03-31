@@ -1,3 +1,4 @@
+/*
 var bugzilla = bz.createClient();
 
 bugzilla.searchBugs({
@@ -19,6 +20,7 @@ bugzilla.searchBugs({
     document.getElementById('closed').innerHTML = bugs.length;
   }
 });
+*/
 
 function count() {
   var count = 0;
