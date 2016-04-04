@@ -268,7 +268,7 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/downloads">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-downloads.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/downloads">Chrome docs</a>
-<h5 id="downloads-bugs"><a href="#downloads-bugs" class="anchor">&sect;</a> 16 bugs</h5>
+<h5 id="downloads-bugs"><a href="#downloads-bugs" class="anchor">&sect;</a> 14 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213445">1213445: [tracking] Implement chrome.downloads</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1245606">1245606: Implement chrome.downloads.getFileIcon()</a></td>
@@ -284,8 +284,6 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256243">1256243: extra chrome.downloads.onChanged events generated during cancel</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256269">1256269: Support endTime and estimatedEndTime in DownloadItem</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256691">1256691: Add test coverage for chrome.downloads.show() error states</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1257137">1257137: downloads.[pause/resume/cancel] are missing a try/catch around DownloadMap.fromId()</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1257581">1257581: Intermittent test_chrome_ext_downloads_misc.html | Cleanup function threw exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIFile.remove]" nsresult: "0x80004005 (NS_ERROR_FAILURE)" location: "JS frame :: setup/< :</a></td>
 	</tr>
 </table><h5 id="downloads-functions"><a href="#downloads-functions" class="anchor">&sect;</a> 14 functions</h5>
 <table class="table table-striped">
@@ -421,17 +419,32 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/notifications">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-notifications.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/notifications">Chrome docs</a>
-<h5 id="notifications-bugs"><a href="#notifications-bugs" class="anchor">&sect;</a> 7 bugs</h5>
+<h5 id="notifications-bugs"><a href="#notifications-bugs" class="anchor">&sect;</a> 6 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190681">1190681: Browser extension |notifications| API needs support for buttons in notifications</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213455">1213455: Complete the implementation of chrome.notifications</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1237035">1237035: chrome.notifications.create is ignored for the first time in WebExtensions</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1254291">1254291: Add schema for the notifications API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1254300">1254300: Calling notifications.create always dismisses existing notifications</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1254359">1254359: notifications.getAll() result is not Chrome-compatible</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256627">1256627: nsIAlertsService does not notify the listener when a notification closes automatically</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1260528">1260528: Tests for notifications that pass an iconUrl are causing leaks</a></td>
 	</tr>
-</table>	</blockquote>
+</table><h5 id="notifications-functions"><a href="#notifications-functions" class="anchor">&sect;</a> 5 functions</h5>
+<table class="table table-striped">
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Notifications/clear">chrome.notifications.clear()</a></td><td></td><td><span class="label label-info">rank 42</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Notifications/create">chrome.notifications.create()</a></td><td></td><td><span class="label label-info">rank 28</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Notifications/getAll">chrome.notifications.getAll()</a></td><td></td><td><span class="label label-info">rank 188</span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Notifications/update">chrome.notifications.update()</a></td><td></td><td><span class="label label-info">rank 176</span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.notifications.getPermissionLevel()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 221</span></td></tr>
+</table>
+<h5 id="notifications-events"><a href="#notifications-events" class="anchor">&sect;</a> 5 events</h5>
+<table class="table table-striped">
+	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.notifications.onPermissionLevelChanged</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 307</span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.notifications.onShowSettings</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info">rank 277</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Notifications/onClosed">chrome.notifications.onClosed</a></td><td></td><td><span class="label label-info">rank 93</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Notifications/onButtonClicked">chrome.notifications.onButtonClicked</a></td><td></td><td><span class="label label-info">rank 65</span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Notifications/onClicked">chrome.notifications.onClicked</a></td><td></td><td><span class="label label-info">rank 40</span></td></tr>
+</table>
+	</blockquote>
 	</div>
 <div class="api-group" style="display: block">	<h4 id="omnibox"><a href="#omnibox" class="anchor">&sect;</a> omnibox&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/omnibox">Chrome docs</a>
@@ -610,8 +623,9 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
-<h5 id="tabs-bugs"><a href="#tabs-bugs" class="anchor">&sect;</a> 9 bugs</h5>
+<h5 id="tabs-bugs"><a href="#tabs-bugs" class="anchor">&sect;</a> 13 bugs</h5>
 <table class="table table-striped">
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190328">1190328: Test coverage for tabs extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1219940">1219940: [tracking] Support Mega as a WebExtension</a></td>
@@ -621,6 +635,9 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240326">1240326: Don't trigger reflow on tab events</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240631">1240631: Callback not called for chrome.tabs.move when tab is invalid</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246693">1246693: Provide WebExtension Thumbnail API</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1254003">1254003: chrome.tabs.executeScript within chrome.tabs.create outputs "No matching message handler".</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1260548">1260548: Basic tabs API support for Android WebExtensions</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1260550">1260550: Support messaging interfaces in the tabs API on Android</a></td>
 	</tr>
 </table><h5 id="tabs-functions"><a href="#tabs-functions" class="anchor">&sect;</a> 23 functions</h5>
 <table class="table table-striped">
@@ -646,7 +663,7 @@
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/reload">chrome.tabs.reload()</a></td><td></td><td><span class="label label-info">rank 49</span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/sendMessage">chrome.tabs.sendMessage()</a></td><td></td><td><span class="label label-info">rank 9</span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/highlight">chrome.tabs.highlight()</a></td><td></td><td><span class="label label-info">rank 193</span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/getAllInWindow">chrome.tabs.getAllInWindow()</a></td><td></td><td><span class="label label-info">rank 44</span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/getAllInWindow">chrome.tabs.getAllInWindow()</a></td><td></td><td><span class="label label-info">rank 44</span></td></tr>
 </table>
 <h5 id="tabs-events"><a href="#tabs-events" class="anchor">&sect;</a> 13 events</h5>
 <table class="table table-striped">
@@ -700,8 +717,9 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
-<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 8 bugs</h5>
+<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 9 bugs</h5>
 <table class="table table-striped">
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190329">1190329: Test coverage for webNavigation extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213478">1213478: Complete the implementation of chrome.webNavigation</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242561">1242561: Import missing events API schema file</a></td>
@@ -736,10 +754,9 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webRequest.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webRequest">Chrome docs</a>
-<h5 id="webRequest-bugs"><a href="#webRequest-bugs" class="anchor">&sect;</a> 7 bugs</h5>
+<h5 id="webRequest-bugs"><a href="#webRequest-bugs" class="anchor">&sect;</a> 6 bugs</h5>
 <table class="table table-striped">
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1176092">1176092: Test that redirectUrl works as documented in the WebRequest API</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190689">1190689: Implement webRequest auth and redirect handlers</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190689">1190689: Implement webRequest auth  handler</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1201979">1201979: Support requestBody in onBeforeRequest</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210990">1210990: Implement content-side hooks to handle WebRequest decisions which affect or are affected by the DOM.</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213483">1213483: Complete the implementation of chrome.webRequest</a></td>
