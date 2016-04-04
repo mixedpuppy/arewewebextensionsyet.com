@@ -57,6 +57,8 @@ platform_lookup = {
     "desktop": "success"
 }
 
+amount_convertable = json.load(open('amount.json', 'r'))
+
 
 def formatted(data):
     res = ''
@@ -94,6 +96,22 @@ def formatted(data):
 
         res += '\t</blockquote>\n'
         res += '\t</div>\n'
+    return res
+
+
+def compats(data):
+    res = ''
+    dates = data['desktop'].items()
+
+    res += '<table class="table table-striped">\n'
+    res += '\t<thead><tr><td>Date</td><td>Amount</td></tr></thead>\n'
+    res += '\t<tr>'
+
+    for date, amount in reversed(sorted(dates)):
+        res += '\t\t<td>%s</td><td>%s%%</td>' % (date, amount)
+
+    res += '\t</tr>'
+    res += '</table>'
     return res
 
 
@@ -198,5 +216,5 @@ if __name__=='__main__':
     data = json.load(open('data.json', 'r'))
     html = open('template.html', 'r').read().encode('utf8')
     data = formatted(data).encode('utf8')
-    html = html.format(data=data)
+    html = html.format(data=data, compats=compats(amount_convertable))
     open('index.html', 'w').write(html)

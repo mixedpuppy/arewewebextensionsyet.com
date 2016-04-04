@@ -14,15 +14,11 @@
 			<h2>Yes, I think we are.</h2>
 			<p>Mozilla documentation on <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions">WebExtensions</a>, see also the <a href="https://wiki.mozilla.org/WebExtensions">wiki page</a>.</p>
 			<p>Chrome documentation on <a href="https://developer.chrome.com/extensions">WebExtensions</a>.</p>
-			<h2>Bugs</h2>
-			<p>There are <b id="open">...</b> <a href="http://mzl.la/1QB0EMG">open</a> bugs and <b id="closed">...</b> closed bugs.</p>
-			<p>How about some <a href="https://bugzilla.mozilla.org/buglist.cgi?f1=bug_mentor&o1=isnotempty&whiteboard_type=contains_all&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=UNCONFIRMED&include_fields=id&include_fields=assigned_to&include_fields=summary&include_fields=last_change_time&include_fields=component&include_fields=whiteboard&product=%20Toolkit&component=WebExtensions&list_id=12576923" id="first">good first bugs</a>.</p>
-			<p>Or maybe:
-				<a href="https://bit.ly/blocking-webextensions">bugs that block</a>,
-				<a href="https://bit.ly/not-blocking-webextensions">bugs that do not block</a>,
-				<a href="http://bit.ly/nominated-blocking-webextensions">bugs that have been nominated to block</a>.
-		  </p>
-			<h2>APIs</h2>
+			<ul>
+				<li><a href="#apis">APIs</a></li>
+				<li><a href="#chrome">Chrome store compatability</li>
+			</ul>
+			<h2><a href="#apis" class="anchor" id="apis">&sect;</a> APIs</h2>
 			<p>Filters:
 				<a href="#" id="desktop-only" class="filter">desktop only</a> &bull;
 				<a href="#" id="android-only" class="filter">android only</a> &bull;
@@ -32,6 +28,9 @@
 				<a href="#" id="reset" class="filter">reset</a> (<span id="count"></span> APIs)
 			</p>
 			{data}
+			<h2><a href="#chrome" class="anchor" id="chrome">&sect;</a> Chrome store compatability</h2>
+			<p>Using a naive regex and some basic assumptions and a limited data set of 10,000+ add-ons from the Chrome store, this is a guess how many of those add-ons would work in Firefox Desktop.</p>
+			{compats}
 	  </div>
 		<div class="container">
 			<div class="note"><a href="https://github.com/andymckay/arewewebextensionsyet.com">Source on github</a>.</div>
