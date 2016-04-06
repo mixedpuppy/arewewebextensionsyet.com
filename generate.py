@@ -53,7 +53,7 @@ status_lookup = {
 }
 
 platform_lookup = {
-    "android": "warning",
+    "android": "success",
     "desktop": "success"
 }
 
