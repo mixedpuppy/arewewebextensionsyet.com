@@ -134,7 +134,7 @@ def htmlify_schema(res, schema, type_, api):
 
         rank = parsed_usage.get(value['usage'], None)
         if rank:
-            res += '<td><span class="label label-info" id="rank-%s">rank %s</span></td>' % (rank, rank)
+            res += '<td><span class="label label-info"><a id="rank-%s">rank %s</a></span></td>' % (rank, rank)
         else:
             res += '<td></td>'
 
