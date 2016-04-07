@@ -14,7 +14,8 @@ schema_locations = [
     '../firefox/firefox/toolkit/components/extensions/schemas/'
 ]
 schema_skip = [
-    '../firefox/firefox/browser/components/extensions/schemas/context_menus_internal.json'
+    '../firefox/firefox/browser/components/extensions/schemas/context_menus_internal.json',
+#    '../firefox/firefox/toolkit/components/extensions/schemas/notifications.json'
 ]
 usage_file = 'usage.csv'
 
@@ -56,8 +57,6 @@ platform_lookup = {
     "android": "success",
     "desktop": "success"
 }
-
-amount_convertable = json.load(open('amount.json', 'r'))
 
 
 def formatted(data):
@@ -135,7 +134,7 @@ def htmlify_schema(res, schema, type_, api):
 
         rank = parsed_usage.get(value['usage'], None)
         if rank:
-            res += '<td><span class="label label-info">rank %s</span></td>' % rank
+            res += '<td><span class="label label-info" id="rank-%s">rank %s</span></td>' % (rank, rank)
         else:
             res += '<td></td>'
 
@@ -210,6 +209,7 @@ def process_type(type_, data):
 
 
 if __name__=='__main__':
+    amount_convertable = json.load(open('amount.json', 'r'))
     parsed_usage = parse_usage()
     process_schemas(schema_locations)
 
