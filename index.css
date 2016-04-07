@@ -23,7 +23,10 @@ td {
     color: lightgrey;
 }
 
-
 dl {
     margin: 0;
+}
+
+span.label-info a {
+    color: white;
 }
