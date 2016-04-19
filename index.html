@@ -55,11 +55,12 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/bookmarks">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-bookmarks.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/bookmarks">Chrome docs</a>
-<h5 id="bookmarks-bugs"><a href="#bookmarks-bugs" class="anchor">&sect;</a> 3 bugs</h5>
+<h5 id="bookmarks-bugs"><a href="#bookmarks-bugs" class="anchor">&sect;</a> 4 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213674">1213674: Complete the implementation of chrome.bookmarks</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1221764">1221764: Implement simple chrome.bookmarks events</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1225916">1225916: bookmarks API should allow searching by tag</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1260743">1260743: Searching by the url doesn’t work</a></td>
 	</tr>
 </table><h5 id="bookmarks-functions"><a href="#bookmarks-functions" class="anchor">&sect;</a> 13 functions</h5>
 <table class="table table-striped">
@@ -94,7 +95,7 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-browserAction.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/browserAction">Chrome docs</a>
-<h5 id="browserAction-bugs"><a href="#browserAction-bugs" class="anchor">&sect;</a> 9 bugs</h5>
+<h5 id="browserAction-bugs"><a href="#browserAction-bugs" class="anchor">&sect;</a> 10 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1203738">1203738: Update browserAction and pageAction icons after pixel density change</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1207591">1207591: badge background color - provide 3 recommended colors</a></td>
@@ -105,6 +106,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1237377">1237377: [meta] WebExtension popup support</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1244789">1244789: Support richer user interactions in the chrome.browserAction API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1253419">1253419: Support menu-button buttons in the pageAction API.</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1259406">1259406: chrome.browserAction.setBadgeText isnt working</a></td>
 	</tr>
 </table><h5 id="browserAction-functions"><a href="#browserAction-functions" class="anchor">&sect;</a> 12 functions</h5>
 <table class="table table-striped">
@@ -313,9 +315,10 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/extension">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-extension.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/extension">Chrome docs</a>
-<h5 id="extension-bugs"><a href="#extension-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="extension-bugs"><a href="#extension-bugs" class="anchor">&sect;</a> 2 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213426">1213426: Complete the implementation of chrome.extension</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1263900">1263900: Complete test coverage for browser.extension.inIncognitoContext</a></td>
 	</tr>
 </table><h5 id="extension-functions"><a href="#extension-functions" class="anchor">&sect;</a> 6 functions</h5>
 <table class="table table-striped">
@@ -349,9 +352,10 @@
 	</div>
 <div class="api-group" style="display: block">	<h4 id="history"><a href="#history" class="anchor">&sect;</a> history&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/history">Chrome docs</a>
-<h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 2 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208334">1208334: [tracking] Implement history API for open extension API</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1262923">1262923: Create schema for the history API</a></td>
 	</tr>
 </table>	</blockquote>
 	</div>
@@ -415,7 +419,7 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/notifications">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-notifications.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/notifications">Chrome docs</a>
-<h5 id="notifications-bugs"><a href="#notifications-bugs" class="anchor">&sect;</a> 6 bugs</h5>
+<h5 id="notifications-bugs"><a href="#notifications-bugs" class="anchor">&sect;</a> 7 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190681">1190681: Browser extension |notifications| API needs support for buttons in notifications</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213455">1213455: Complete the implementation of chrome.notifications</a></td>
@@ -423,6 +427,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1254300">1254300: Calling notifications.create always dismisses existing notifications</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256627">1256627: nsIAlertsService does not notify the listener when a notification closes automatically</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1260528">1260528: Tests for notifications that pass an iconUrl are causing leaks</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1264818">1264818: Intermittent test_ext_notifications.html | Test timed out.  | Extension left running at test shutdown</a></td>
 	</tr>
 </table><h5 id="notifications-functions"><a href="#notifications-functions" class="anchor">&sect;</a> 5 functions</h5>
 <table class="table table-striped">
@@ -455,10 +460,12 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/pageAction">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-pageAction.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/pageAction">Chrome docs</a>
-<h5 id="pageAction-bugs"><a href="#pageAction-bugs" class="anchor">&sect;</a> 2 bugs</h5>
+<h5 id="pageAction-bugs"><a href="#pageAction-bugs" class="anchor">&sect;</a> 4 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1222454">1222454: Not possible to set the width and height of the popup</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1237377">1237377: [meta] WebExtension popup support</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1263005">1263005: [tracking] PageAction API support for Android WebExtensions</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1263152">1263152: pageAction methods do not handle invalid tab IDs elegantly</a></td>
 	</tr>
 </table><h5 id="pageAction-functions"><a href="#pageAction-functions" class="anchor">&sect;</a> 7 functions</h5>
 <table class="table table-striped">
@@ -753,13 +760,14 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webRequest.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webRequest">Chrome docs</a>
-<h5 id="webRequest-bugs"><a href="#webRequest-bugs" class="anchor">&sect;</a> 6 bugs</h5>
+<h5 id="webRequest-bugs"><a href="#webRequest-bugs" class="anchor">&sect;</a> 7 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190689">1190689: Implement webRequest auth  handler</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1201979">1201979: Support requestBody in onBeforeRequest</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1210990">1210990: Implement content-side hooks to handle WebRequest decisions which affect or are affected by the DOM.</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213483">1213483: Complete the implementation of chrome.webRequest</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1255894">1255894: Support a webRequest.onResponseData event to filter HTTP response bytes as they come</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256122">1256122: webRequest.onHeadersReceived no redirect to extension page</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256600">1256600: Keep WebRequest resilient to introduction of nsILoadInfo.frame(Outer|Inner)WindowId</a></td>
 	</tr>
 </table><h5 id="webRequest-functions"><a href="#webRequest-functions" class="anchor">&sect;</a> 1 functions</h5>
