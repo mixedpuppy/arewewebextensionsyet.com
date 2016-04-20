@@ -141,12 +141,11 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/commands">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-commands.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/commands">Chrome docs</a>
-<h5 id="commands-bugs"><a href="#commands-bugs" class="anchor">&sect;</a> 4 bugs</h5>
+<h5 id="commands-bugs"><a href="#commands-bugs" class="anchor">&sect;</a> 3 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1240350">1240350: commands API not supported</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246034">1246034: [commands] Add support for _execute_browser_action</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1251795">1251795: [commands] Add support for Chrome's media keys</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1263560">1263560: White space should be accepted in commands API key names</a></td>
 	</tr>
 </table><h5 id="commands-functions"><a href="#commands-functions" class="anchor">&sect;</a> 1 functions</h5>
 <table class="table table-striped">
@@ -170,11 +169,10 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/contextMenus">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-contextMenus.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/contextMenus">Chrome docs</a>
-<h5 id="contextMenus-bugs"><a href="#contextMenus-bugs" class="anchor">&sect;</a> 4 bugs</h5>
+<h5 id="contextMenus-bugs"><a href="#contextMenus-bugs" class="anchor">&sect;</a> 3 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1215376">1215376: Implement onBeforeShow event</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246044">1246044: When you delete an extension which modifies the context menu and then install an extension, the menu items from the deleted extension still show up</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1250685">1250685: contextMenus is strange when context doesn't apply</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1253418">1253418: Support browser_action and page_action contexts in browser.contextMenus API</a></td>
 	</tr>
 </table><h5 id="contextMenus-functions"><a href="#contextMenus-functions" class="anchor">&sect;</a> 4 functions</h5>
@@ -352,10 +350,18 @@
 	</div>
 <div class="api-group" style="display: block">	<h4 id="history"><a href="#history" class="anchor">&sect;</a> history&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/history">Chrome docs</a>
-<h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 2 bugs</h5>
+<h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 10 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208334">1208334: [tracking] Implement history API for open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1262923">1262923: Create schema for the history API</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265834">1265834: Implement browser.history.search</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265835">1265835: Implement browser.history.getVisits</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265836">1265836: Implement browser.history.addUrl</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265837">1265837: Implement browser.history.deleteUrl</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265838">1265838: Implement browser.history.deleteRange</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265842">1265842: Implement browser.history.deleteAll</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265845">1265845: Implement browser.history.onVisited</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265847">1265847: Implement browser.history.onVisitRemoved</a></td>
 	</tr>
 </table>	</blockquote>
 	</div>
@@ -720,17 +726,15 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
-<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 12 bugs</h5>
+<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 10 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190329">1190329: Test coverage for webNavigation extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213478">1213478: Complete the implementation of chrome.webNavigation</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242561">1242561: Import missing events API schema file</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246125">1246125: Fix "moz-extensions:" URLs  reported as "jar:" URLs in webNavigation events</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248418">1248418: Implement errorOccurred in the webNavigation.getFrame/getAllFrames frame details</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248426">1248426: processId in the webNavigation API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1252129">1252129: Filter out webNavigation events related to new window initialization phase</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1256652">1256652: Implements transitionTypes and transitionQualifier attributes in the onCommitted/onHistoryStateUpdated webNavigation events</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1262957">1262957: use NavHistoryService visit's transitionType to enhance the webNavigation transition types and qualifiers</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1263723">1263723: WebNavigation API should keep track of the user interaction with the urlbar and set transition types and qualifiers accordingly</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1264936">1264936: Support server_redirect transitionQualifiers on sub-frame WebNavigation events</a></td>
