@@ -104,12 +104,12 @@ def compats(data):
 
     res += '<table class="table table-striped">\n'
     res += '\t<thead><tr><td>Date</td><td>Amount</td></tr></thead>\n'
-    res += '\t<tr>'
 
     for date, amount in reversed(sorted(dates)):
+        res += '\t<tr>'
         res += '\t\t<td>%s</td><td>%s%%</td>' % (date, amount)
-
-    res += '\t</tr>'
+        res += '\t</tr>'
+        
     res += '</table>'
     return res
 
