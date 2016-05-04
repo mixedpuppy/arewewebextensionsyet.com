@@ -286,7 +286,7 @@
 <table class="table table-striped">
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/search">chrome.downloads.search()</a></td><td></td><td><span class="label label-info"><a id="rank-121">rank 121</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/pause">chrome.downloads.pause()</a></td><td></td><td><span class="label label-info"><a id="rank-266">rank 266</a></span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/getFileIcon">chrome.downloads.getFileIcon()</a></td><td></td><td><span class="label label-info"><a id="rank-272">rank 272</a></span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/getFileIcon">chrome.downloads.getFileIcon()</a></td><td></td><td><span class="label label-info"><a id="rank-272">rank 272</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/resume">chrome.downloads.resume()</a></td><td></td><td><span class="label label-info"><a id="rank-271">rank 271</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/show">chrome.downloads.show()</a></td><td></td><td><span class="label label-info"><a id="rank-243">rank 243</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Downloads/removeFile">chrome.downloads.removeFile()</a></td><td></td><td><span class="label label-info"><a id="rank-252">rank 252</a></span></td></tr>
@@ -350,32 +350,17 @@
 	</div>
 <div class="api-group" style="display: block">	<h4 id="history"><a href="#history" class="anchor">&sect;</a> history&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/history">Chrome docs</a>
-<h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 8 bugs</h5>
+<h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 7 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208334">1208334: [tracking] Implement history API for open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265834">1265834: Implement browser.history.search</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265835">1265835: Implement browser.history.getVisits</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265836">1265836: Implement browser.history.addUrl</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265837">1265837: Implement browser.history.deleteUrl</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265842">1265842: Implement browser.history.deleteAll and deleteRange</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265845">1265845: Implement browser.history.onVisited</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265847">1265847: Implement browser.history.onVisitRemoved</a></td>
 	</tr>
-</table><h5 id="history-functions"><a href="#history-functions" class="anchor">&sect;</a> 6 functions</h5>
-<table class="table table-striped">
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.search()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-72">rank 72</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.addUrl()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-242">rank 242</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.deleteRange()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-250">rank 250</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.deleteAll()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-232">rank 232</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.getVisits()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-189">rank 189</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.deleteUrl()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-191">rank 191</a></span></td></tr>
-</table>
-<h5 id="history-events"><a href="#history-events" class="anchor">&sect;</a> 2 events</h5>
-<table class="table table-striped">
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.onVisited</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-200">rank 200</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.onVisitRemoved</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-249">rank 249</a></span></td></tr>
-</table>
-	</blockquote>
+</table>	</blockquote>
 	</div>
 <div class="api-group" style="display: block">	<h4 id="i18n"><a href="#i18n" class="anchor">&sect;</a> i18n&nbsp;<span class="label label-primary">complete</span>
 &nbsp;<span class="label label-success">desktop</span>
@@ -854,7 +839,7 @@
 			<p>Using a naive regex and some basic assumptions and a limited data set of 10,000+ add-ons from the Chrome store, this is a guess how many of those add-ons would work in Firefox Desktop.</p>
 			<table class="table table-striped">
 	<thead><tr><td>Date</td><td>Amount</td></tr></thead>
-	<tr>		<td>2016-04-07</td><td>38.88%</td>	</tr>	<tr>		<td>2016-03-31</td><td>38.71%</td>	</tr></table>
+	<tr>		<td>2016-04-26</td><td>38.88%</td>	</tr>	<tr>		<td>2016-04-07</td><td>38.88%</td>	</tr>	<tr>		<td>2016-03-31</td><td>38.71%</td>	</tr></table>
 	  </div>
 		<div class="container">
 			<div class="note"><a href="https://github.com/andymckay/arewewebextensionsyet.com">Source on github</a>.</div>
