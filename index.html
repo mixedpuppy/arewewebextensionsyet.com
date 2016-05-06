@@ -313,10 +313,11 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/extension">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-extension.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/extension">Chrome docs</a>
-<h5 id="extension-bugs"><a href="#extension-bugs" class="anchor">&sect;</a> 2 bugs</h5>
+<h5 id="extension-bugs"><a href="#extension-bugs" class="anchor">&sect;</a> 3 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213426">1213426: Complete the implementation of chrome.extension</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1263900">1263900: Complete test coverage for browser.extension.inIncognitoContext</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1270306">1270306: isAllowedFileSchemeAccess should return `false` rather than `true`</a></td>
 	</tr>
 </table><h5 id="extension-functions"><a href="#extension-functions" class="anchor">&sect;</a> 6 functions</h5>
 <table class="table table-striped">
@@ -350,13 +351,12 @@
 	</div>
 <div class="api-group" style="display: block">	<h4 id="history"><a href="#history" class="anchor">&sect;</a> history&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/history">Chrome docs</a>
-<h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 7 bugs</h5>
+<h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 6 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208334">1208334: [tracking] Implement history API for open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265834">1265834: Implement browser.history.search</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265835">1265835: Implement browser.history.getVisits</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265836">1265836: Implement browser.history.addUrl</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265842">1265842: Implement browser.history.deleteAll and deleteRange</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265845">1265845: Implement browser.history.onVisited</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265847">1265847: Implement browser.history.onVisitRemoved</a></td>
 	</tr>
@@ -364,8 +364,8 @@
 <table class="table table-striped">
 	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.search()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-72">rank 72</a></span></td></tr>
 	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.addUrl()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-242">rank 242</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.deleteRange()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-250">rank 250</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.deleteAll()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-232">rank 232</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.history.deleteRange()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-250">rank 250</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.history.deleteAll()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-232">rank 232</a></span></td></tr>
 	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.history.getVisits()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-189">rank 189</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.history.deleteUrl()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-191">rank 191</a></span></td></tr>
 </table>
@@ -482,7 +482,7 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/pageAction">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-pageAction.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/pageAction">Chrome docs</a>
-<h5 id="pageAction-bugs"><a href="#pageAction-bugs" class="anchor">&sect;</a> 8 bugs</h5>
+<h5 id="pageAction-bugs"><a href="#pageAction-bugs" class="anchor">&sect;</a> 9 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1222454">1222454: Not possible to set the width and height of the popup</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1237377">1237377: [meta] WebExtension popup support</a></td>
@@ -492,6 +492,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1267346">1267346: [PageAction] Add support for chrome.pageAction.hide on Android</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1267354">1267354: [PageAction] Add support for chrome.pageAction.setIcon on Android</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1267402">1267402: [PageAction] Add support for chrome.pageAction.onClicked on Android</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1270742">1270742: [PageAction] Add support for chrome.pageAction default_icon on Android</a></td>
 	</tr>
 </table><h5 id="pageAction-functions"><a href="#pageAction-functions" class="anchor">&sect;</a> 7 functions</h5>
 <table class="table table-striped">
