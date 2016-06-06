@@ -10,11 +10,11 @@ CHECK_URL = True
 
 MDN_URL = 'https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/%s/%s'
 schema_locations = [
-    '../firefox/firefox/browser/components/extensions/schemas/',
-    '../firefox/firefox/toolkit/components/extensions/schemas/'
+    '../firefox/mozilla-central/browser/components/extensions/schemas/',
+    '../firefox/mozilla-central/toolkit/components/extensions/schemas/'
 ]
 schema_skip = [
-    '../firefox/firefox/browser/components/extensions/schemas/context_menus_internal.json',
+    '../firefox/mozilla-central/browser/components/extensions/schemas/context_menus_internal.json',
 #    '../firefox/firefox/toolkit/components/extensions/schemas/notifications.json'
 ]
 usage_file = 'usage.csv'
@@ -109,7 +109,7 @@ def compats(data):
         res += '\t<tr>'
         res += '\t\t<td>%s</td><td>%s%%</td>' % (date, amount)
         res += '\t</tr>'
-        
+
     res += '</table>'
     return res
 
