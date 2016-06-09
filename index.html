@@ -358,12 +358,10 @@
 	</div>
 <div class="api-group" style="display: block">	<h4 id="history"><a href="#history" class="anchor">&sect;</a> history&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/history">Chrome docs</a>
-<h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 7 bugs</h5>
+<h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 5 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208334">1208334: [tracking] Implement history API for open extension API</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265835">1265835: Implement browser.history.getVisits</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265845">1265845: Implement browser.history.onVisited</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1271675">1271675: Add tests for browser.history.search that use specific date ranges</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1272676">1272676: Refactor DownloadTime and HistoryTime into a shared schema type</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1275633">1275633: Add typedCount to the result set returned by browser.history.search</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1278538">1278538: Migrate tests for browser.history to use History.insertMany rather than PlacesTestUtils.addVisits</a></td>
@@ -371,16 +369,16 @@
 </table><h5 id="history-functions"><a href="#history-functions" class="anchor">&sect;</a> 6 functions</h5>
 <table class="table table-striped">
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/search">chrome.history.search()</a></td><td></td><td><span class="label label-info"><a id="rank-72">rank 72</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/addUrl">chrome.history.addUrl()</a></td><td></td><td><span class="label label-info"><a id="rank-242">rank 242</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/addUrl">chrome.history.addUrl()</a></td><td></td><td><span class="label label-info"><a id="rank-242">rank 242</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/deleteRange">chrome.history.deleteRange()</a></td><td></td><td><span class="label label-info"><a id="rank-250">rank 250</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/deleteAll">chrome.history.deleteAll()</a></td><td></td><td><span class="label label-info"><a id="rank-232">rank 232</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/getVisits">chrome.history.getVisits()</a></td><td></td><td><span class="label label-info"><a id="rank-189">rank 189</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/getVisits">chrome.history.getVisits()</a></td><td></td><td><span class="label label-info"><a id="rank-189">rank 189</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/deleteUrl">chrome.history.deleteUrl()</a></td><td></td><td><span class="label label-info"><a id="rank-191">rank 191</a></span></td></tr>
 </table>
 <h5 id="history-events"><a href="#history-events" class="anchor">&sect;</a> 2 events</h5>
 <table class="table table-striped">
 	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisited">chrome.history.onVisited</a></td><td></td><td><span class="label label-info"><a id="rank-200">rank 200</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisitRemoved">chrome.history.onVisitRemoved</a></td><td></td><td><span class="label label-info"><a id="rank-249">rank 249</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisitRemoved">chrome.history.onVisitRemoved</a></td><td></td><td><span class="label label-info"><a id="rank-249">rank 249</a></span></td></tr>
 </table>
 	</blockquote>
 	</div>
@@ -488,12 +486,11 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/pageAction">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-pageAction.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/pageAction">Chrome docs</a>
-<h5 id="pageAction-bugs"><a href="#pageAction-bugs" class="anchor">&sect;</a> 5 bugs</h5>
+<h5 id="pageAction-bugs"><a href="#pageAction-bugs" class="anchor">&sect;</a> 4 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1237377">1237377: [meta] WebExtension popup support</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1263005">1263005: [tracking] PageAction API support for Android WebExtensions</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1263152">1263152: pageAction methods do not handle invalid tab IDs elegantly</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1264118">1264118: [PageAction] Add support for chrome.pageAction popups on Android</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1270742">1270742: [PageAction] Add support for chrome.pageAction icons on Android</a></td>
 	</tr>
 </table><h5 id="pageAction-functions"><a href="#pageAction-functions" class="anchor">&sect;</a> 7 functions</h5>
@@ -657,7 +654,7 @@
 <h5 id="tabs-bugs"><a href="#tabs-bugs" class="anchor">&sect;</a> 11 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190328">1190328: Test coverage for tabs extension API</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: Sending a single message to the content script(s) in the specified tab doesn't work</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: tabs.sendMessage does not send messages to tab pages</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213477">1213477: Complete the implementation of chrome.tabs</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1219940">1219940: [tracking] Support Mega as a WebExtension</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1223254">1223254: Figure out when tabs API callbacks should fire, and make them fire at the right time</a></td>
@@ -668,7 +665,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1260550">1260550: Support messaging interfaces in the tabs API on Android</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1274871">1274871: tabs.executeScript gives an unhelpful error</a></td>
 	</tr>
-</table><h5 id="tabs-functions"><a href="#tabs-functions" class="anchor">&sect;</a> 23 functions</h5>
+</table><h5 id="tabs-functions"><a href="#tabs-functions" class="anchor">&sect;</a> 24 functions</h5>
 <table class="table table-striped">
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/executeScript">chrome.tabs.executeScript()</a></td><td></td><td><span class="label label-info"><a id="rank-6">rank 6</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/getZoomSettings">chrome.tabs.getZoomSettings()</a></td><td></td><td><span class="label label-info"><a id="rank-357">rank 357</a></span></td></tr>
@@ -692,6 +689,7 @@
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/reload">chrome.tabs.reload()</a></td><td></td><td><span class="label label-info"><a id="rank-49">rank 49</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/sendMessage">chrome.tabs.sendMessage()</a></td><td></td><td><span class="label label-info"><a id="rank-9">rank 9</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/highlight">chrome.tabs.highlight()</a></td><td></td><td><span class="label label-info"><a id="rank-193">rank 193</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.tabs.removeCSS()</td><td><span class="label label-default">no docs</span></td><td></td></tr>
 	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/getAllInWindow">chrome.tabs.getAllInWindow()</a></td><td></td><td><span class="label label-info"><a id="rank-44">rank 44</a></span></td></tr>
 </table>
 <h5 id="tabs-events"><a href="#tabs-events" class="anchor">&sect;</a> 13 events</h5>
