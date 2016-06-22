@@ -361,10 +361,10 @@
 <h5 id="history-bugs"><a href="#history-bugs" class="anchor">&sect;</a> 5 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1208334">1208334: [tracking] Implement history API for open extension API</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1265845">1265845: Implement browser.history.onVisited</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1272676">1272676: Refactor DownloadTime and HistoryTime into a shared schema type</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1275633">1275633: Add typedCount to the result set returned by browser.history.search</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1278538">1278538: Migrate tests for browser.history to use History.insertMany rather than PlacesTestUtils.addVisits</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1280357">1280357: Update browser.history.onVisited to not call PlacesUtils.promisePlaceInfo</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1280582">1280582: Implement browser.history.onTitleChanged</a></td>
 	</tr>
 </table><h5 id="history-functions"><a href="#history-functions" class="anchor">&sect;</a> 6 functions</h5>
 <table class="table table-striped">
@@ -377,7 +377,7 @@
 </table>
 <h5 id="history-events"><a href="#history-events" class="anchor">&sect;</a> 2 events</h5>
 <table class="table table-striped">
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisited">chrome.history.onVisited</a></td><td></td><td><span class="label label-info"><a id="rank-200">rank 200</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisited">chrome.history.onVisited</a></td><td></td><td><span class="label label-info"><a id="rank-200">rank 200</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisitRemoved">chrome.history.onVisitRemoved</a></td><td></td><td><span class="label label-info"><a id="rank-249">rank 249</a></span></td></tr>
 </table>
 	</blockquote>
@@ -430,9 +430,11 @@
 	</div>
 <div class="api-group" style="display: block">	<h4 id="management"><a href="#management" class="anchor">&sect;</a> management&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/management">Chrome docs</a>
-<h5 id="management-bugs"><a href="#management-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="management-bugs"><a href="#management-bugs" class="anchor">&sect;</a> 3 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220136">1220136: WebExtensions support chrome.management.uninstallSelf</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1280236">1280236: Implement chrome.management.uninstall</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1280237">1280237: Implement chrome.management.install</a></td>
 	</tr>
 </table>	</blockquote>
 	</div>
@@ -566,8 +568,8 @@
 <table class="table table-striped">
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getBackgroundPage">chrome.runtime.getBackgroundPage()</a></td><td></td><td><span class="label label-info"><a id="rank-80">rank 80</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/openOptionsPage">chrome.runtime.openOptionsPage()</a></td><td></td><td><span class="label label-info"><a id="rank-124">rank 124</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/sendNativeMessage">chrome.runtime.sendNativeMessage()</a></td><td></td><td><span class="label label-info"><a id="rank-122">rank 122</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/connectNative">chrome.runtime.connectNative()</a></td><td></td><td><span class="label label-info"><a id="rank-179">rank 179</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/sendNativeMessage">chrome.runtime.sendNativeMessage()</a></td><td></td><td><span class="label label-info"><a id="rank-122">rank 122</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/connectNative">chrome.runtime.connectNative()</a></td><td></td><td><span class="label label-info"><a id="rank-179">rank 179</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/setUninstallURL">chrome.runtime.setUninstallURL()</a></td><td></td><td><span class="label label-info"><a id="rank-69">rank 69</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getURL">chrome.runtime.getURL()</a></td><td></td><td><span class="label label-info"><a id="rank-62">rank 62</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getManifest">chrome.runtime.getManifest()</a></td><td></td><td><span class="label label-info"><a id="rank-23">rank 23</a></span></td></tr>
@@ -744,19 +746,17 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
-<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 11 bugs</h5>
+<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 9 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190329">1190329: Test coverage for webNavigation extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213478">1213478: Complete the implementation of chrome.webNavigation</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242522">1242522: Implement webNavigation event filtering</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1242561">1242561: Import missing events API schema file</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248418">1248418: Implement errorOccurred in the webNavigation.getFrame/getAllFrames frame details</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1248426">1248426: processId in the webNavigation API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1252129">1252129: Filter out webNavigation events related to new window initialization phase</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1262957">1262957: use NavHistoryService visit's transitionType to enhance the webNavigation transition types and qualifiers</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1264936">1264936: Support server_redirect transitionQualifiers on sub-frame WebNavigation events</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1267221">1267221: WebNavigation onErrorOccurred details should contains an 'error' field</a></td>
 	</tr>
 </table><h5 id="webNavigation-functions"><a href="#webNavigation-functions" class="anchor">&sect;</a> 2 functions</h5>
 <table class="table table-striped">
