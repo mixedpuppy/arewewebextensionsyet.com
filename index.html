@@ -172,7 +172,7 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/contextMenus">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-contextMenus.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/contextMenus">Chrome docs</a>
-<h5 id="contextMenus-bugs"><a href="#contextMenus-bugs" class="anchor">&sect;</a> 8 bugs</h5>
+<h5 id="contextMenus-bugs"><a href="#contextMenus-bugs" class="anchor">&sect;</a> 9 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1215376">1215376: Implement onBeforeShow event</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1246044">1246044: When you delete an extension which modifies the context menu and then install an extension, the menu items from the deleted extension still show up</a></td>
@@ -182,6 +182,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1275116">1275116: documentUrlPatterns does not work in the contextMenus API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1275126">1275126: "targetUrlPatterns" in contextMenus fails with an error if the ContextType is "image"</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1278685">1278685: Add a test to prove that removing all items from a context menu does not break context menus for other extensions</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1280370">1280370: contextMenus do not support other protocols (ex. 'magnet:*', 'acestream:*', 'sop:*')</a></td>
 	</tr>
 </table><h5 id="contextMenus-functions"><a href="#contextMenus-functions" class="anchor">&sect;</a> 4 functions</h5>
 <table class="table table-striped">
@@ -369,16 +370,16 @@
 </table><h5 id="history-functions"><a href="#history-functions" class="anchor">&sect;</a> 6 functions</h5>
 <table class="table table-striped">
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/search">chrome.history.search()</a></td><td></td><td><span class="label label-info"><a id="rank-72">rank 72</a></span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/addUrl">chrome.history.addUrl()</a></td><td></td><td><span class="label label-info"><a id="rank-242">rank 242</a></span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/addUrl">chrome.history.addUrl()</a></td><td></td><td><span class="label label-info"><a id="rank-242">rank 242</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/deleteRange">chrome.history.deleteRange()</a></td><td></td><td><span class="label label-info"><a id="rank-250">rank 250</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/deleteAll">chrome.history.deleteAll()</a></td><td></td><td><span class="label label-info"><a id="rank-232">rank 232</a></span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/getVisits">chrome.history.getVisits()</a></td><td></td><td><span class="label label-info"><a id="rank-189">rank 189</a></span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/getVisits">chrome.history.getVisits()</a></td><td></td><td><span class="label label-info"><a id="rank-189">rank 189</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/deleteUrl">chrome.history.deleteUrl()</a></td><td></td><td><span class="label label-info"><a id="rank-191">rank 191</a></span></td></tr>
 </table>
 <h5 id="history-events"><a href="#history-events" class="anchor">&sect;</a> 2 events</h5>
 <table class="table table-striped">
-	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisited">chrome.history.onVisited</a></td><td></td><td><span class="label label-info"><a id="rank-200">rank 200</a></span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisitRemoved">chrome.history.onVisitRemoved</a></td><td></td><td><span class="label label-info"><a id="rank-249">rank 249</a></span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisited">chrome.history.onVisited</a></td><td></td><td><span class="label label-info"><a id="rank-200">rank 200</a></span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisitRemoved">chrome.history.onVisitRemoved</a></td><td></td><td><span class="label label-info"><a id="rank-249">rank 249</a></span></td></tr>
 </table>
 	</blockquote>
 	</div>
@@ -568,8 +569,8 @@
 <table class="table table-striped">
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getBackgroundPage">chrome.runtime.getBackgroundPage()</a></td><td></td><td><span class="label label-info"><a id="rank-80">rank 80</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/openOptionsPage">chrome.runtime.openOptionsPage()</a></td><td></td><td><span class="label label-info"><a id="rank-124">rank 124</a></span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/sendNativeMessage">chrome.runtime.sendNativeMessage()</a></td><td></td><td><span class="label label-info"><a id="rank-122">rank 122</a></span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/connectNative">chrome.runtime.connectNative()</a></td><td></td><td><span class="label label-info"><a id="rank-179">rank 179</a></span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/sendNativeMessage">chrome.runtime.sendNativeMessage()</a></td><td></td><td><span class="label label-info"><a id="rank-122">rank 122</a></span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/connectNative">chrome.runtime.connectNative()</a></td><td></td><td><span class="label label-info"><a id="rank-179">rank 179</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/setUninstallURL">chrome.runtime.setUninstallURL()</a></td><td></td><td><span class="label label-info"><a id="rank-69">rank 69</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getURL">chrome.runtime.getURL()</a></td><td></td><td><span class="label label-info"><a id="rank-62">rank 62</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getManifest">chrome.runtime.getManifest()</a></td><td></td><td><span class="label label-info"><a id="rank-23">rank 23</a></span></td></tr>
@@ -610,7 +611,7 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/storage">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-storage.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/storage">Chrome docs</a>
-<h5 id="storage-bugs"><a href="#storage-bugs" class="anchor">&sect;</a> 8 bugs</h5>
+<h5 id="storage-bugs"><a href="#storage-bugs" class="anchor">&sect;</a> 9 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213475">1213475: Complete the implementation of chrome.storage</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1213990">1213990: Clear localStorage when a WebExtension is uninstalled</a></td>
@@ -620,6 +621,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1253744">1253744: [kinto] Put chrome.storage.sync behind a feature flag</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1253746">1253746: [kinto] Mock out server calls so that tests can run</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1277612">1277612: [kinto] Migrate browser.storage.local to use kinto collections</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282109">1282109: update version of kinto.js client</a></td>
 	</tr>
 </table><h5 id="storage-events"><a href="#storage-events" class="anchor">&sect;</a> 1 events</h5>
 <table class="table table-striped">
@@ -748,7 +750,7 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
-<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 9 bugs</h5>
+<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 10 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190329">1190329: Test coverage for webNavigation extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></td>
@@ -759,6 +761,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1252129">1252129: Filter out webNavigation events related to new window initialization phase</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1262957">1262957: use NavHistoryService visit's transitionType to enhance the webNavigation transition types and qualifiers</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1264936">1264936: Support server_redirect transitionQualifiers on sub-frame WebNavigation events</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1280404">1280404: Implement chrome.webNavigation.onTabReplaced</a></td>
 	</tr>
 </table><h5 id="webNavigation-functions"><a href="#webNavigation-functions" class="anchor">&sect;</a> 2 functions</h5>
 <table class="table table-striped">
