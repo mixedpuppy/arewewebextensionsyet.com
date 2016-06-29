@@ -370,16 +370,16 @@
 </table><h5 id="history-functions"><a href="#history-functions" class="anchor">&sect;</a> 6 functions</h5>
 <table class="table table-striped">
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/search">chrome.history.search()</a></td><td></td><td><span class="label label-info"><a id="rank-72">rank 72</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/addUrl">chrome.history.addUrl()</a></td><td></td><td><span class="label label-info"><a id="rank-242">rank 242</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/addUrl">chrome.history.addUrl()</a></td><td></td><td><span class="label label-info"><a id="rank-242">rank 242</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/deleteRange">chrome.history.deleteRange()</a></td><td></td><td><span class="label label-info"><a id="rank-250">rank 250</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/deleteAll">chrome.history.deleteAll()</a></td><td></td><td><span class="label label-info"><a id="rank-232">rank 232</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/getVisits">chrome.history.getVisits()</a></td><td></td><td><span class="label label-info"><a id="rank-189">rank 189</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/getVisits">chrome.history.getVisits()</a></td><td></td><td><span class="label label-info"><a id="rank-189">rank 189</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/deleteUrl">chrome.history.deleteUrl()</a></td><td></td><td><span class="label label-info"><a id="rank-191">rank 191</a></span></td></tr>
 </table>
 <h5 id="history-events"><a href="#history-events" class="anchor">&sect;</a> 2 events</h5>
 <table class="table table-striped">
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisited">chrome.history.onVisited</a></td><td></td><td><span class="label label-info"><a id="rank-200">rank 200</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisitRemoved">chrome.history.onVisitRemoved</a></td><td></td><td><span class="label label-info"><a id="rank-249">rank 249</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisited">chrome.history.onVisited</a></td><td></td><td><span class="label label-info"><a id="rank-200">rank 200</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/History/onVisitRemoved">chrome.history.onVisitRemoved</a></td><td></td><td><span class="label label-info"><a id="rank-249">rank 249</a></span></td></tr>
 </table>
 	</blockquote>
 	</div>
@@ -431,11 +431,15 @@
 	</div>
 <div class="api-group" style="display: block">	<h4 id="management"><a href="#management" class="anchor">&sect;</a> management&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/management">Chrome docs</a>
-<h5 id="management-bugs"><a href="#management-bugs" class="anchor">&sect;</a> 3 bugs</h5>
+<h5 id="management-bugs"><a href="#management-bugs" class="anchor">&sect;</a> 7 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1220136">1220136: WebExtensions support chrome.management.uninstallSelf</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1280236">1280236: Implement chrome.management.uninstall</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1280237">1280237: Implement chrome.management.install</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282979">1282979: [tracking] Management API support for WebExtensions</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282981">1282981: Implement chrome.management.getAll for WebExtensions</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282982">1282982: Implement chrome.management.setEnabled for WebExtensions</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282984">1282984: Implement chrome.management.onInstalled for WebExtensions</a></td>
 	</tr>
 </table>	</blockquote>
 	</div>
@@ -569,8 +573,8 @@
 <table class="table table-striped">
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getBackgroundPage">chrome.runtime.getBackgroundPage()</a></td><td></td><td><span class="label label-info"><a id="rank-80">rank 80</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/openOptionsPage">chrome.runtime.openOptionsPage()</a></td><td></td><td><span class="label label-info"><a id="rank-124">rank 124</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/sendNativeMessage">chrome.runtime.sendNativeMessage()</a></td><td></td><td><span class="label label-info"><a id="rank-122">rank 122</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/connectNative">chrome.runtime.connectNative()</a></td><td></td><td><span class="label label-info"><a id="rank-179">rank 179</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/sendNativeMessage">chrome.runtime.sendNativeMessage()</a></td><td></td><td><span class="label label-info"><a id="rank-122">rank 122</a></span></td></tr>
+	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/connectNative">chrome.runtime.connectNative()</a></td><td></td><td><span class="label label-info"><a id="rank-179">rank 179</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/setUninstallURL">chrome.runtime.setUninstallURL()</a></td><td></td><td><span class="label label-info"><a id="rank-69">rank 69</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getURL">chrome.runtime.getURL()</a></td><td></td><td><span class="label label-info"><a id="rank-62">rank 62</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getManifest">chrome.runtime.getManifest()</a></td><td></td><td><span class="label label-info"><a id="rank-23">rank 23</a></span></td></tr>
@@ -750,7 +754,7 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/webNavigation">Chrome docs</a>
-<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 10 bugs</h5>
+<h5 id="webNavigation-bugs"><a href="#webNavigation-bugs" class="anchor">&sect;</a> 15 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190329">1190329: Test coverage for webNavigation extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190687">1190687: Implement webNavigation.onCreatedNavigationTarget</a></td>
@@ -762,6 +766,11 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1262957">1262957: use NavHistoryService visit's transitionType to enhance the webNavigation transition types and qualifiers</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1264936">1264936: Support server_redirect transitionQualifiers on sub-frame WebNavigation events</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1280404">1280404: Implement chrome.webNavigation.onTabReplaced</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282971">1282971: Implement background.persistent</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282972">1282972: Implement "unlimitedStorage" permission</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282975">1282975: Handle the "update_url" manifest property</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282977">1282977: Handle the "author" manifest property</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282978">1282978: Handle the "minimum_chrome_version" manifest property</a></td>
 	</tr>
 </table><h5 id="webNavigation-functions"><a href="#webNavigation-functions" class="anchor">&sect;</a> 2 functions</h5>
 <table class="table table-striped">
