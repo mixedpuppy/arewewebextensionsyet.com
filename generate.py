@@ -36,7 +36,10 @@ def bugs(whiteboard):
         'https://bugzilla.mozilla.org/rest/bug',
         params={
             'product': 'Toolkit',
-            'component': 'WebExtensions',
+            'component': ['WebExtensions', 
+    'WebExtensions: Android', 'WebExtensions: Compatibility', 
+    'WebExtensions: Developer tools', 'WebExtensions: Experiments', 'WebExtensions: Frontend', 
+    'WebExtensions: General', 'WebExtensions: Request Handling'],
             'whiteboard': '[%s]' % whiteboard,
             'include_fields': 'summary,status,resolution,id',
             'status': ['NEW', 'ASSIGNED', 'UNCONFIRMED', 'REOPENED']
