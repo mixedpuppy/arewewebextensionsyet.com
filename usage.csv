@@ -1,4 +1,4 @@
-API,Count,Done?
+API,Count
 chrome.tabs.create, 4125
 chrome.extension.getURL, 2953
 chrome.tabs.query, 2658
