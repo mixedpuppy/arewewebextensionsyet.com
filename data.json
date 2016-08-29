@@ -90,7 +90,11 @@
     "status": "unlikely"
   },
   "history": {
-    "status": "not yet"
+    "status": "complete",
+    "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-history.js",
+    "platform": [
+      "desktop"
+    ]
   },
   "i18n": {
     "status": "complete",
@@ -145,7 +149,7 @@
     "status": "not yet"
   },
   "proxy": {
-    "status": "not yet"
+    "status": "partial"
   },
   "runtime": {
     "status": "partial",
@@ -176,7 +180,7 @@
     "status": "not yet"
   },
   "tabs": {
-    "status": "partial",
+    "status": "complete",
     "code": "https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js",
     "platform": [
       "desktop"
@@ -195,7 +199,7 @@
     "status": "unlikely"
   },
   "webNavigation": {
-    "status": "partial",
+    "status": "complete",
     "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webNavigation.js",
     "platform": [
       "desktop",
@@ -203,7 +207,7 @@
     ]
   },
   "webRequest": {
-    "status": "partial",
+    "status": "complete",
     "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-webRequest.js",
     "platform": [
       "desktop",
