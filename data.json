@@ -116,7 +116,12 @@
     ]
   },
   "management": {
-    "status": "not yet"
+    "status": "partial",
+    "code": "https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-management.js",
+    "platform": [
+      "desktop",
+      "android"
+    ]
   },
   "notifications": {
     "status": "partial",
