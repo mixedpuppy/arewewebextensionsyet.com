@@ -243,26 +243,29 @@
 	</div>
 <div class="api-group" style="display: block">	<h4 id="devtools.inspectedWindow"><a href="#devtools.inspectedWindow" class="anchor">&sect;</a> devtools.inspectedWindow&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/devtools.inspectedWindow">Chrome docs</a>
-<h5 id="devtools.inspectedWindow-bugs"><a href="#devtools.inspectedWindow-bugs" class="anchor">&sect;</a> 2 bugs</h5>
+<h5 id="devtools.inspectedWindow-bugs"><a href="#devtools.inspectedWindow-bugs" class="anchor">&sect;</a> 3 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211859">1211859: Implement devtools API for open extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1291737">1291737: Implement devtools_page and devtools.inspectedWindow.tabId</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1300584">1300584: Implements devtools.inspectedWindow.eval and reload API methods</a></td>
 	</tr>
 </table>	</blockquote>
 	</div>
 <div class="api-group" style="display: block">	<h4 id="devtools.network"><a href="#devtools.network" class="anchor">&sect;</a> devtools.network&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/devtools.network">Chrome docs</a>
-<h5 id="devtools.network-bugs"><a href="#devtools.network-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="devtools.network-bugs"><a href="#devtools.network-bugs" class="anchor">&sect;</a> 2 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211859">1211859: Implement devtools API for open extension API</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1300588">1300588: Implements the devtools.network.onNavigated API event</a></td>
 	</tr>
 </table>	</blockquote>
 	</div>
 <div class="api-group" style="display: block">	<h4 id="devtools.panels"><a href="#devtools.panels" class="anchor">&sect;</a> devtools.panels&nbsp;<span class="label label-default">not yet</span>
 </h4><blockquote>		<a href="https://developer.chrome.com/extensions/devtools.panels">Chrome docs</a>
-<h5 id="devtools.panels-bugs"><a href="#devtools.panels-bugs" class="anchor">&sect;</a> 1 bugs</h5>
+<h5 id="devtools.panels-bugs"><a href="#devtools.panels-bugs" class="anchor">&sect;</a> 2 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1211859">1211859: Implement devtools API for open extension API</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1300587">1300587: Implements devtools_panel context and devtools.panel.create API method</a></td>
 	</tr>
 </table>	</blockquote>
 	</div>
@@ -417,10 +420,9 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/idle">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/toolkit/components/extensions/ext-idle.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/idle">Chrome docs</a>
-<h5 id="idle-bugs"><a href="#idle-bugs" class="anchor">&sect;</a> 2 bugs</h5>
+<h5 id="idle-bugs"><a href="#idle-bugs" class="anchor">&sect;</a> 1 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1299775">1299775: Implement chrome.idle.onStateChanged</a></td>
-	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1299846">1299846: Complete the implementation of chrome.idle.queryState</a></td>
 	</tr>
 </table><h5 id="idle-functions"><a href="#idle-functions" class="anchor">&sect;</a> 2 functions</h5>
 <table class="table table-striped">
@@ -448,14 +450,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282982">1282982: Implement chrome.management.setEnabled</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1282984">1282984: Implement chrome.management events</a></td>
 	</tr>
-</table><h5 id="management-functions"><a href="#management-functions" class="anchor">&sect;</a> 4 functions</h5>
-<table class="table table-striped">
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.management.uninstallSelf()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-130">rank 130</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.management.getAll()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-46">rank 46</a></span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td>chrome.management.getSelf()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-136">rank 136</a></span></td></tr>
-	<tr>		<td><span class="label label-danger">not supported</span></td><td>chrome.management.get()</td><td><span class="label label-default">no docs</span></td><td><span class="label label-info"><a id="rank-141">rank 141</a></span></td></tr>
-</table>
-	</blockquote>
+</table>	</blockquote>
 	</div>
 <div class="api-group" style="display: block">	<h4 id="notifications"><a href="#notifications" class="anchor">&sect;</a> notifications&nbsp;<span class="label label-info">partial</span>
 &nbsp;<span class="label label-success">desktop</span>
@@ -592,7 +587,7 @@
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getURL">chrome.runtime.getURL()</a></td><td></td><td><span class="label label-info"><a id="rank-62">rank 62</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getManifest">chrome.runtime.getManifest()</a></td><td></td><td><span class="label label-info"><a id="rank-23">rank 23</a></span></td></tr>
 	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/requestUpdateCheck">chrome.runtime.requestUpdateCheck()</a></td><td></td><td><span class="label label-info"><a id="rank-143">rank 143</a></span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/reload">chrome.runtime.reload()</a></td><td></td><td><span class="label label-info"><a id="rank-86">rank 86</a></span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/reload">chrome.runtime.reload()</a></td><td></td><td><span class="label label-info"><a id="rank-86">rank 86</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/sendMessage">chrome.runtime.sendMessage()</a></td><td></td><td><span class="label label-info"><a id="rank-4">rank 4</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/connect">chrome.runtime.connect()</a></td><td></td><td><span class="label label-info"><a id="rank-47">rank 47</a></span></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/getPlatformInfo">chrome.runtime.getPlatformInfo()</a></td><td></td><td><span class="label label-info"><a id="rank-149">rank 149</a></span></td></tr>
@@ -606,7 +601,7 @@
 	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/onBrowserUpdateAvailable">chrome.runtime.onBrowserUpdateAvailable</a></td><td></td><td></td></tr>
 	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/onConnect">chrome.runtime.onConnect</a></td><td></td><td><span class="label label-info"><a id="rank-41">rank 41</a></span></td></tr>
 	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/onMessageExternal">chrome.runtime.onMessageExternal</a></td><td></td><td><span class="label label-info"><a id="rank-78">rank 78</a></span></td></tr>
-	<tr>		<td><span class="label label-success">supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/onUpdateAvailable">chrome.runtime.onUpdateAvailable</a></td><td></td><td><span class="label label-info"><a id="rank-127">rank 127</a></span></td></tr>
+	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/onUpdateAvailable">chrome.runtime.onUpdateAvailable</a></td><td></td><td><span class="label label-info"><a id="rank-127">rank 127</a></span></td></tr>
 	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/onStartup">chrome.runtime.onStartup</a></td><td></td><td><span class="label label-info"><a id="rank-82">rank 82</a></span></td></tr>
 	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/onInstalled">chrome.runtime.onInstalled</a></td><td></td><td><span class="label label-info"><a id="rank-16">rank 16</a></span></td></tr>
 	<tr>		<td><span class="label label-danger">not supported</span></td><td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Runtime/onConnectExternal">chrome.runtime.onConnectExternal</a></td><td></td><td><span class="label label-info"><a id="rank-184">rank 184</a></span></td></tr>
@@ -669,7 +664,7 @@
 </h4><blockquote>		<a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs">Firefox docs</a> &bull;
 		<a href="https://dxr.mozilla.org/mozilla-central/source/browser/components/extensions/ext-tabs.js">Firefox code</a> &bull;
 		<a href="https://developer.chrome.com/extensions/tabs">Chrome docs</a>
-<h5 id="tabs-bugs"><a href="#tabs-bugs" class="anchor">&sect;</a> 12 bugs</h5>
+<h5 id="tabs-bugs"><a href="#tabs-bugs" class="anchor">&sect;</a> 13 bugs</h5>
 <table class="table table-striped">
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1190328">1190328: Test coverage for tabs extension API</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209869">1209869: tabs.sendMessage does not send messages to tab pages</a></td>
@@ -683,6 +678,7 @@
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1260550">1260550: Support messaging interfaces in the tabs API on Android</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1269456">1269456: Add permissions item to allow use of tabs.create/tabs.update</a></td>
 	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1281354">1281354: reported current window is incorrect after tab is detached</a></td>
+	<tr>		<td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1300399">1300399: Add API to restore closed tabs</a></td>
 	</tr>
 </table><h5 id="tabs-functions"><a href="#tabs-functions" class="anchor">&sect;</a> 24 functions</h5>
 <table class="table table-striped">
