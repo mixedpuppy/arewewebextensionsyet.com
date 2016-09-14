@@ -10,12 +10,12 @@ CHECK_URL = True
 
 MDN_URL = 'https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/%s/%s'
 schema_locations = [
-    '../firefox/mozilla-central/browser/components/extensions/schemas/',
-    '../firefox/mozilla-central/toolkit/components/extensions/schemas/'
+    '../mozilla-central/browser/components/extensions/schemas/',
+    '../mozilla-central/toolkit/components/extensions/schemas/'
 ]
 schema_skip = [
-    '../firefox/mozilla-central/browser/components/extensions/schemas/context_menus_internal.json',
-#    '../firefox/firefox/toolkit/components/extensions/schemas/notifications.json'
+    '../mozilla-central/browser/components/extensions/schemas/context_menus_internal.json',
+#    '../firefox/toolkit/components/extensions/schemas/notifications.json'
 ]
 usage_file = 'usage.csv'
 
